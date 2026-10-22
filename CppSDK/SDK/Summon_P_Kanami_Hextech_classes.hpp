@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Summon_P_Kanami_0_classes.hpp"
+#include "Summon_P_Kanami_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Summon_P_Kanami_Hextech.Summon_P_Kanami_Hextech_C
 // 0x0000 (0x08F0 - 0x08F0)
-class ASummon_P_Kanami_Hextech_C final : public Summon_P_Kanami_0::ASummon_P_Kanami_C
+class ASummon_P_Kanami_Hextech_C final : public Summon_P_Kanami::ASummon_P_Kanami_C
 {
 public:
 	static class UClass* StaticClass()

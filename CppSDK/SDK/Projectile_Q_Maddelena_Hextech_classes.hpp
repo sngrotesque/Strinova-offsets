@@ -11,21 +11,21 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Projectile_Q_Maddelena_0_classes.hpp"
+#include "Projectile_Q_Maddelena_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C
 // 0x0008 (0x0B68 - 0x0B60)
-class AProjectile_Q_Maddelena_Hextech_C final : public Projectile_Q_Maddelena_0::AProjectile_Q_Maddelena_C
+class AProjectile_Q_Maddelena_Hextech_C final : public Projectile_Q_Maddelena::AProjectile_Q_Maddelena_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Projectile_Q_Maddelena_Hextech_C;   // 0x0B60(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_Projectile_Q_Maddelena_Hextech(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

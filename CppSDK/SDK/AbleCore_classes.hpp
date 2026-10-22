@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "AbleCore_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "AIModule_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "AbleCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_structs.hpp"

@@ -16,23 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Character_Fragrans.BP_Character_Fragrans_C.ExecuteUbergraph_BP_Character_Fragrans
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Character_Fragrans.BP_Character_Fragrans_C.Blinking__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_Character_Fragrans_C::ExecuteUbergraph_BP_Character_Fragrans(int32 EntryPoint)
+void ABP_Character_Fragrans_C::Blinking__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Fragrans_C", "ExecuteUbergraph_BP_Character_Fragrans");
+		Func = Class->GetFunction("BP_Character_Fragrans_C", "Blinking__FinishedFunc");
 
-	Params::BP_Character_Fragrans_C_ExecuteUbergraph_BP_Character_Fragrans Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -50,17 +44,23 @@ void ABP_Character_Fragrans_C::Blinking__UpdateFunc()
 }
 
 
-// Function BP_Character_Fragrans.BP_Character_Fragrans_C.Blinking__FinishedFunc
-// (BlueprintEvent)
+// Function BP_Character_Fragrans.BP_Character_Fragrans_C.ExecuteUbergraph_BP_Character_Fragrans
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Character_Fragrans_C::Blinking__FinishedFunc()
+void ABP_Character_Fragrans_C::ExecuteUbergraph_BP_Character_Fragrans(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Fragrans_C", "Blinking__FinishedFunc");
+		Func = Class->GetFunction("BP_Character_Fragrans_C", "ExecuteUbergraph_BP_Character_Fragrans");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Character_Fragrans_C_ExecuteUbergraph_BP_Character_Fragrans Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

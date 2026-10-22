@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "BP_TargetDisplayReticle_Q_KokonaShiki_0_classes.hpp"
+#include "BP_TargetDisplayReticle_Q_KokonaShiki_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_TargetDisplay_HealthLow_Q_KokonaShiki.BP_TargetDisplay_HealthLow_Q_KokonaShiki_C
 // 0x0000 (0x0098 - 0x0098)
-class BP_TargetDisplay_HealthLow_Q_KokonaShiki_0::UBP_TargetDisplay_HealthLow_Q_KokonaShiki_C final : public BP_TargetDisplayReticle_Q_KokonaShiki_0::UBP_TargetDisplayReticle_Q_KokonaShiki_C
+class BP_TargetDisplay_HealthLow_Q_KokonaShiki_0::UBP_TargetDisplay_HealthLow_Q_KokonaShiki_C final : public BP_TargetDisplayReticle_Q_KokonaShiki::UBP_TargetDisplayReticle_Q_KokonaShiki_C
 {
 public:
 	static class UClass* StaticClass()

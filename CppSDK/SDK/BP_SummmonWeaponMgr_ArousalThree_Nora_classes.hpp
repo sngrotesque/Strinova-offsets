@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SummmonWeaponMgr_ArousalThree_Nora.BP_SummmonWeaponMgr_ArousalThree_Nora_C
-// 0x0000 (0x1728 - 0x1728)
+// 0x0000 (0x1738 - 0x1738)
 class UBP_SummmonWeaponMgr_ArousalThree_Nora_C final : public UCySummonWeaponManagerComponent
 {
 public:

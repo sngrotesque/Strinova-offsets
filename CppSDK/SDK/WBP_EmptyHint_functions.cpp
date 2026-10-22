@@ -16,37 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_EmptyHint.WBP_EmptyHint_C.ExecuteUbergraph_WBP_EmptyHint
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_EmptyHint.WBP_EmptyHint_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_EmptyHint_C::ExecuteUbergraph_WBP_EmptyHint(int32 EntryPoint)
+void UWBP_EmptyHint_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EmptyHint_C", "ExecuteUbergraph_WBP_EmptyHint");
+		Func = Class->GetFunction("WBP_EmptyHint_C", "PreConstruct");
 
-	Params::WBP_EmptyHint_C_ExecuteUbergraph_WBP_EmptyHint Parms{};
+	Params::WBP_EmptyHint_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmptyHint.WBP_EmptyHint_C.PlayOpenAnim
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EmptyHint_C::PlayOpenAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EmptyHint_C", "PlayOpenAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -70,21 +56,35 @@ void UWBP_EmptyHint_C::SetText(const class FText& InText)
 }
 
 
-// Function WBP_EmptyHint.WBP_EmptyHint_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_EmptyHint.WBP_EmptyHint_C.PlayOpenAnim
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_EmptyHint_C::PreConstruct(bool IsDesignTime)
+void UWBP_EmptyHint_C::PlayOpenAnim()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EmptyHint_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_EmptyHint_C", "PlayOpenAnim");
 
-	Params::WBP_EmptyHint_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_EmptyHint.WBP_EmptyHint_C.ExecuteUbergraph_WBP_EmptyHint
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmptyHint_C::ExecuteUbergraph_WBP_EmptyHint(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EmptyHint_C", "ExecuteUbergraph_WBP_EmptyHint");
+
+	Params::WBP_EmptyHint_C_ExecuteUbergraph_WBP_EmptyHint Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

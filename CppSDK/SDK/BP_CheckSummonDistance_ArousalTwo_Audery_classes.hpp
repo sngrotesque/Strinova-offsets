@@ -17,22 +17,22 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_CheckSummonDistance_ArousalTwo_Audery.BP_CheckSummonDistance_ArousalTwo_Audery_C
 // 0x0000 (0x0098 - 0x0098)
-class BP_CheckSummonDistance_ArousalTwo_Audery::UBP_CheckSummonDistance_ArousalTwo_Audery_C final : public UCyCheckSummonDistance
+class UBP_CheckSummonDistance_ArousalTwo_Audery_C final : public UCyCheckSummonDistance
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_CheckSummonDistance_ArousalTwo_Audery.BP_CheckSummonDistance_ArousalTwo_Audery_C")
+		BP_STATIC_CLASS_IMPL("BP_CheckSummonDistance_ArousalTwo_Audery_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_CheckSummonDistance_ArousalTwo_Audery_C")
 	}
-	static class BP_CheckSummonDistance_ArousalTwo_Audery::UBP_CheckSummonDistance_ArousalTwo_Audery_C* GetDefaultObj()
+	static class UBP_CheckSummonDistance_ArousalTwo_Audery_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_CheckSummonDistance_ArousalTwo_Audery::UBP_CheckSummonDistance_ArousalTwo_Audery_C>();
+		return GetDefaultObjImpl<UBP_CheckSummonDistance_ArousalTwo_Audery_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_CheckSummonDistance_ArousalTwo_Audery__UBP_CheckSummonDistance_ArousalTwo_Audery_C;
+DUMPER7_ASSERTS_UBP_CheckSummonDistance_ArousalTwo_Audery_C;
 
 SDK_NAMESPACE_END

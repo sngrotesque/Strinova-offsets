@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Weapon10602001.Weapon10602001_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWeapon10602001_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Weapon10602001_C", "ReceiveTick");
+
+	Params::Weapon10602001_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Weapon10602001.Weapon10602001_C.ExecuteUbergraph_Weapon10602001
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void AWeapon10602001_C::ExecuteUbergraph_Weapon10602001(int32 EntryPoint)
 	Params::Weapon10602001_C_ExecuteUbergraph_Weapon10602001 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Weapon10602001.Weapon10602001_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AWeapon10602001_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Weapon10602001_C", "ReceiveTick");
-
-	Params::Weapon10602001_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

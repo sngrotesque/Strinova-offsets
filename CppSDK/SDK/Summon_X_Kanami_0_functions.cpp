@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_X_Kanami.Summon_X_Kanami_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Summon_X_Kanami_0::ASummon_X_Kanami_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_X_Kanami_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Summon_X_Kanami.Summon_X_Kanami_C.ExecuteUbergraph_Summon_X_Kanami
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void Summon_X_Kanami_0::ASummon_X_Kanami_C::ExecuteUbergraph_Summon_X_Kanami(int
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_X_Kanami.Summon_X_Kanami_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Summon_X_Kanami_0::ASummon_X_Kanami_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_X_Kanami_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

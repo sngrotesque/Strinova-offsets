@@ -20,8 +20,8 @@ SDK_NAMESPACE_START
 class Weapon_Q_Fragrans_0::AWeapon_Q_Fragrans_C final : public ACyWeaponCustom
 {
 public:
-	class UCyTargetLocationComponent*             CyTargetLocation;                                  // 0x1500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyFSecondWorkState*                    CyFSecondWorkState;                                // 0x1508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRecordBoolComponent*                 CyRecordBool;                                      // 0x1500(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyTargetLocationComponent*             CyTargetLocation;                                  // 0x1508(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCyFWorkState*                          CyFWorkState;                                      // 0x1510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCySkinComponent*                       CySkin;                                            // 0x1518(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 

@@ -16,41 +16,35 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PrivateChatName.WBP_PrivateChatName_C.ExecuteUbergraph_WBP_PrivateChatName
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PrivateChatName.WBP_PrivateChatName_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_PrivateChatName_C::ExecuteUbergraph_WBP_PrivateChatName(int32 EntryPoint)
+void UWBP_PrivateChatName_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PrivateChatName_C", "ExecuteUbergraph_WBP_PrivateChatName");
+		Func = Class->GetFunction("WBP_PrivateChatName_C", "BP_OnEntryReleased");
 
-	Params::WBP_PrivateChatName_C_ExecuteUbergraph_WBP_PrivateChatName Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PrivateChatName.WBP_PrivateChatName_C.OnListItemObjectSet
+// Function WBP_PrivateChatName.WBP_PrivateChatName_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_PrivateChatName_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_PrivateChatName_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PrivateChatName_C", "OnListItemObjectSet");
+		Func = Class->GetFunction("WBP_PrivateChatName_C", "BP_OnItemExpansionChanged");
 
-	Params::WBP_PrivateChatName_C_OnListItemObjectSet Parms{};
+	Params::WBP_PrivateChatName_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.ListItemObject = ListItemObject;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,37 +70,43 @@ void UWBP_PrivateChatName_C::BP_OnItemSelectionChanged(bool bIsSelected)
 }
 
 
-// Function WBP_PrivateChatName.WBP_PrivateChatName_C.BP_OnItemExpansionChanged
+// Function WBP_PrivateChatName.WBP_PrivateChatName_C.OnListItemObjectSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PrivateChatName_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_PrivateChatName_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PrivateChatName_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_PrivateChatName_C", "OnListItemObjectSet");
 
-	Params::WBP_PrivateChatName_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_PrivateChatName_C_OnListItemObjectSet Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PrivateChatName.WBP_PrivateChatName_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
+// Function WBP_PrivateChatName.WBP_PrivateChatName_C.ExecuteUbergraph_WBP_PrivateChatName
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PrivateChatName_C::BP_OnEntryReleased()
+void UWBP_PrivateChatName_C::ExecuteUbergraph_WBP_PrivateChatName(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PrivateChatName_C", "BP_OnEntryReleased");
+		Func = Class->GetFunction("WBP_PrivateChatName_C", "ExecuteUbergraph_WBP_PrivateChatName");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PrivateChatName_C_ExecuteUbergraph_WBP_PrivateChatName Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

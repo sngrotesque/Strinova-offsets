@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_AirWallRedActor.BP_AirWallRedActor_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_AirWallRedActor_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AirWallRedActor_C", "ReceiveTick");
+
+	Params::BP_AirWallRedActor_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AirWallRedActor.BP_AirWallRedActor_C.ExecuteUbergraph_BP_AirWallRedActor
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void ABP_AirWallRedActor_C::ExecuteUbergraph_BP_AirWallRedActor(int32 EntryPoint
 	Params::BP_AirWallRedActor_C_ExecuteUbergraph_BP_AirWallRedActor Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AirWallRedActor.BP_AirWallRedActor_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_AirWallRedActor_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AirWallRedActor_C", "ReceiveTick");
-
-	Params::BP_AirWallRedActor_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

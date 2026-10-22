@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function Actuator_X_Yvette.Actuator_X_Yvette_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Actuator_X_Yvette_0::AActuator_X_Yvette_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_X_Yvette_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Actuator_X_Yvette.Actuator_X_Yvette_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Actuator_X_Yvette_0::AActuator_X_Yvette_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_X_Yvette_C", "ReceiveTick");
+
+	Params::Actuator_X_Yvette_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Actuator_X_Yvette.Actuator_X_Yvette_C.ExecuteUbergraph_Actuator_X_Yvette
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,40 +67,6 @@ void Actuator_X_Yvette_0::AActuator_X_Yvette_C::ExecuteUbergraph_Actuator_X_Yvet
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_X_Yvette.Actuator_X_Yvette_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Actuator_X_Yvette_0::AActuator_X_Yvette_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_X_Yvette_C", "ReceiveTick");
-
-	Params::Actuator_X_Yvette_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_X_Yvette.Actuator_X_Yvette_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Actuator_X_Yvette_0::AActuator_X_Yvette_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_X_Yvette_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

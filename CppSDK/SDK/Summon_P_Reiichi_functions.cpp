@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_P_Reiichi.Summon_P_Reiichi_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Summon_P_Reiichi::ASummon_P_Reiichi_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_P_Reiichi_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Summon_P_Reiichi.Summon_P_Reiichi_C.ExecuteUbergraph_Summon_P_Reiichi
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void Summon_P_Reiichi::ASummon_P_Reiichi_C::ExecuteUbergraph_Summon_P_Reiichi(in
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_P_Reiichi.Summon_P_Reiichi_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Summon_P_Reiichi::ASummon_P_Reiichi_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_P_Reiichi_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

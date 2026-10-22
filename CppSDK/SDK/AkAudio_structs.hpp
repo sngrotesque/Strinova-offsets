@@ -553,6 +553,16 @@ enum class EPlayAudioDirection : uint8
 	EPlayAudioDirection_MAX                  = 3,
 };
 
+// ScriptStruct AkAudio.AkXboxOneGDKApuHeapInitializationSettings
+// 0x0008 (0x0008 - 0x0000)
+struct FAkXboxOneGDKApuHeapInitializationSettings final
+{
+public:
+	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkXboxOneGDKApuHeapInitializationSettings;
+
 // ScriptStruct AkAudio.AKWaapiJsonObject
 // 0x0010 (0x0010 - 0x0000)
 struct alignas(0x08) FAKWaapiJsonObject final
@@ -561,15 +571,6 @@ public:
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAKWaapiJsonObject;
-
-// ScriptStruct AkAudio.AkWaapiSubscriptionId
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) FAkWaapiSubscriptionId final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAkWaapiSubscriptionId;
 
 // ScriptStruct AkAudio.AkAdvancedInitializationSettings
 // 0x0030 (0x0030 - 0x0000)
@@ -606,6 +607,36 @@ public:
 };
 DUMPER7_ASSERTS_FAkAdvancedInitializationSettingsWithMultiCoreRendering;
 
+// ScriptStruct AkAudio.AkWinGDKAdvancedInitializationSettings
+// 0x0008 (0x0044 - 0x003C)
+struct FAkWinGDKAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
+{
+public:
+	bool                                          UseHeadMountedDisplayAudioDevice;                  // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        uMaxSystemAudioObjects;                            // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkWinGDKAdvancedInitializationSettings;
+
+// ScriptStruct AkAudio.AkWaapiSubscriptionId
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FAkWaapiSubscriptionId final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAkWaapiSubscriptionId;
+
+// ScriptStruct AkAudio.AkXboxOneApuHeapInitializationSettings
+// 0x0008 (0x0008 - 0x0000)
+struct FAkXboxOneApuHeapInitializationSettings final
+{
+public:
+	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkXboxOneApuHeapInitializationSettings;
+
 // ScriptStruct AkAudio.AkAndroidAdvancedInitializationSettings
 // 0x0008 (0x0044 - 0x003C)
 struct FAkAndroidAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
@@ -617,6 +648,15 @@ public:
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAkAndroidAdvancedInitializationSettings;
+
+// ScriptStruct AkAudio.AkWaapiFieldNames
+// 0x0010 (0x0010 - 0x0000)
+struct FAkWaapiFieldNames final
+{
+public:
+	class FString                                 FieldName;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkWaapiFieldNames;
 
 // ScriptStruct AkAudio.AkAudioEventPlatformInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -728,6 +768,16 @@ public:
 };
 DUMPER7_ASSERTS_FAkMidiEventBase;
 
+// ScriptStruct AkAudio.AkXSXApuHeapInitializationSettings
+// 0x0008 (0x0008 - 0x0000)
+struct FAkXSXApuHeapInitializationSettings final
+{
+public:
+	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkXSXApuHeapInitializationSettings;
+
 // ScriptStruct AkAudio.AkMidiProgramChange
 // 0x0001 (0x0003 - 0x0002)
 struct FAkMidiProgramChange final : public FAkMidiEventBase
@@ -833,6 +883,17 @@ public:
 };
 DUMPER7_ASSERTS_FAkGeometrySurfaceOverride;
 
+// ScriptStruct AkAudio.AkAcousticSurface
+// 0x0018 (0x0018 - 0x0000)
+struct FAkAcousticSurface final
+{
+public:
+	uint32                                        Texture;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkAcousticSurface;
+
 // ScriptStruct AkAudio.AkTriangle
 // 0x0008 (0x0008 - 0x0000)
 struct FAkTriangle final
@@ -844,17 +905,6 @@ public:
 	uint16                                        Surface;                                           // 0x0006(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAkTriangle;
-
-// ScriptStruct AkAudio.AkAcousticSurface
-// 0x0018 (0x0018 - 0x0000)
-struct FAkAcousticSurface final
-{
-public:
-	uint32                                        Texture;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkAcousticSurface;
 
 // ScriptStruct AkAudio.AkGeometryData
 // 0x0050 (0x0050 - 0x0000)
@@ -1127,6 +1177,17 @@ public:
 };
 DUMPER7_ASSERTS_FAkReverbDescriptor;
 
+// ScriptStruct AkAudio.AkXboxOneAdvancedInitializationSettings
+// 0x0004 (0x0040 - 0x003C)
+struct FAkXboxOneAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
+{
+public:
+	uint16                                        MaximumNumberOfXMAVoices;                          // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseHardwareCodecLowLatencyMode;                    // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAkXboxOneAdvancedInitializationSettings;
+
 // ScriptStruct AkAudio.AkAcousticTextureParams
 // 0x0020 (0x0020 - 0x0000)
 struct FAkAcousticTextureParams final
@@ -1147,6 +1208,15 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAkGeometrySurfacePropertiesToMap;
+
+// ScriptStruct AkAudio.AkWaapiUri
+// 0x0010 (0x0010 - 0x0000)
+struct FAkWaapiUri final
+{
+public:
+	class FString                                 Uri;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkWaapiUri;
 
 // ScriptStruct AkAudio.AkWwiseObjectDetails
 // 0x0030 (0x0030 - 0x0000)
@@ -1192,6 +1262,17 @@ public:
 };
 DUMPER7_ASSERTS_FAkSurfaceEdgeInfo;
 
+// ScriptStruct AkAudio.AkXboxOneGDKAdvancedInitializationSettings
+// 0x0004 (0x0040 - 0x003C)
+struct FAkXboxOneGDKAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
+{
+public:
+	uint16                                        MaximumNumberOfXMAVoices;                          // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          UseHardwareCodecLowLatencyMode;                    // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAkXboxOneGDKAdvancedInitializationSettings;
+
 // ScriptStruct AkAudio.AkSurfaceEdgeVerts
 // 0x0018 (0x0018 - 0x0000)
 struct alignas(0x04) FAkSurfaceEdgeVerts final
@@ -1214,24 +1295,6 @@ public:
 };
 DUMPER7_ASSERTS_FVolumeConfig;
 
-// ScriptStruct AkAudio.AkWaapiFieldNames
-// 0x0010 (0x0010 - 0x0000)
-struct FAkWaapiFieldNames final
-{
-public:
-	class FString                                 FieldName;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkWaapiFieldNames;
-
-// ScriptStruct AkAudio.AkWaapiUri
-// 0x0010 (0x0010 - 0x0000)
-struct FAkWaapiUri final
-{
-public:
-	class FString                                 Uri;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkWaapiUri;
-
 // ScriptStruct AkAudio.AkWindowsAdvancedInitializationSettings
 // 0x0008 (0x0044 - 0x003C)
 struct FAkWindowsAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
@@ -1242,69 +1305,6 @@ public:
 	uint32                                        MaxSystemAudioObjects;                             // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAkWindowsAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.AkWinGDKAdvancedInitializationSettings
-// 0x0008 (0x0044 - 0x003C)
-struct FAkWinGDKAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
-{
-public:
-	bool                                          UseHeadMountedDisplayAudioDevice;                  // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        uMaxSystemAudioObjects;                            // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkWinGDKAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.AkXboxOneGDKApuHeapInitializationSettings
-// 0x0008 (0x0008 - 0x0000)
-struct FAkXboxOneGDKApuHeapInitializationSettings final
-{
-public:
-	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkXboxOneGDKApuHeapInitializationSettings;
-
-// ScriptStruct AkAudio.AkXboxOneGDKAdvancedInitializationSettings
-// 0x0004 (0x0040 - 0x003C)
-struct FAkXboxOneGDKAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
-{
-public:
-	uint16                                        MaximumNumberOfXMAVoices;                          // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseHardwareCodecLowLatencyMode;                    // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAkXboxOneGDKAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.AkXboxOneApuHeapInitializationSettings
-// 0x0008 (0x0008 - 0x0000)
-struct FAkXboxOneApuHeapInitializationSettings final
-{
-public:
-	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkXboxOneApuHeapInitializationSettings;
-
-// ScriptStruct AkAudio.AkXboxOneAdvancedInitializationSettings
-// 0x0004 (0x0040 - 0x003C)
-struct FAkXboxOneAdvancedInitializationSettings final : public FAkAdvancedInitializationSettingsWithMultiCoreRendering
-{
-public:
-	uint16                                        MaximumNumberOfXMAVoices;                          // 0x003C(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          UseHardwareCodecLowLatencyMode;                    // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAkXboxOneAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.AkXSXApuHeapInitializationSettings
-// 0x0008 (0x0008 - 0x0000)
-struct FAkXSXApuHeapInitializationSettings final
-{
-public:
-	uint32                                        CachedSize;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        NonCachedSize;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkXSXApuHeapInitializationSettings;
 
 // ScriptStruct AkAudio.AkXSXAdvancedInitializationSettings
 // 0x000C (0x0048 - 0x003C)

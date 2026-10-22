@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AtomDecalMaterial_RadiusArousalTwo.BP_AtomDecalMaterial_RadiusArousalTwo_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x0620 - 0x0620)
 class BP_AtomDecalMaterial_RadiusArousalTwo_0::UBP_AtomDecalMaterial_RadiusArousalTwo_C final : public UCySAtomDecalMaterial
 {
 public:

@@ -6,7 +6,7 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: BP_CheckTagRequirements_Other
+// Package: BP_CheckTagRequirements_other
 
 #include "Basic.hpp"
 
@@ -15,24 +15,24 @@
 
 SDK_NAMESPACE_START
 
-// BlueprintGeneratedClass BP_CheckTagRequirements_Other.BP_CheckTagRequirements_Other_C
+// BlueprintGeneratedClass BP_CheckTagRequirements_other.BP_CheckTagRequirements_Other_C
 // 0x0000 (0x01E0 - 0x01E0)
-class BP_CheckTagRequirements_Other::UBP_CheckTagRequirements_Other_C final : public UCyCheckTagRequirements
+class BP_CheckTagRequirements_other::UBP_CheckTagRequirements_Other_C final : public UCyCheckTagRequirements
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_CheckTagRequirements_Other.BP_CheckTagRequirements_Other_C")
+		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_CheckTagRequirements_other.BP_CheckTagRequirements_Other_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_CheckTagRequirements_Other_C")
 	}
-	static class BP_CheckTagRequirements_Other::UBP_CheckTagRequirements_Other_C* GetDefaultObj()
+	static class BP_CheckTagRequirements_other::UBP_CheckTagRequirements_Other_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_CheckTagRequirements_Other::UBP_CheckTagRequirements_Other_C>();
+		return GetDefaultObjImpl<BP_CheckTagRequirements_other::UBP_CheckTagRequirements_Other_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_CheckTagRequirements_Other__UBP_CheckTagRequirements_Other_C;
+DUMPER7_ASSERTS_BP_CheckTagRequirements_other__UBP_CheckTagRequirements_Other_C;
 
 SDK_NAMESPACE_END

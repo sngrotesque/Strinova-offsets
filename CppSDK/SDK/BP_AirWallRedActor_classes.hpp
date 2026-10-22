@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -25,8 +25,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_BP_AirWallRedActor(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

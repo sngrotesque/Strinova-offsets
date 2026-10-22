@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function Summon_Katana_Wind.Summon_Katana_Wind_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct Summon_Katana_Wind_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Summon_Katana_Wind_C_ReceiveTick;
+
 // Function Summon_Katana_Wind.Summon_Katana_Wind_C.ExecuteUbergraph_Summon_Katana_Wind
 // 0x0008 (0x0008 - 0x0000)
 struct Summon_Katana_Wind_C_ExecuteUbergraph_Summon_Katana_Wind final
@@ -23,15 +32,6 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_Summon_Katana_Wind_C_ExecuteUbergraph_Summon_Katana_Wind;
-
-// Function Summon_Katana_Wind.Summon_Katana_Wind_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct Summon_Katana_Wind_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_Summon_Katana_Wind_C_ReceiveTick;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

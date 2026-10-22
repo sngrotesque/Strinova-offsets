@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HurtTotalPanel.WBP_HurtTotalPanel_C.WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0
+// (BlueprintEvent)
+
+void UWBP_HurtTotalPanel_C::WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HurtTotalPanel_C", "WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HurtTotalPanel.WBP_HurtTotalPanel_C.ExecuteUbergraph_WBP_HurtTotalPanel
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void UWBP_HurtTotalPanel_C::ExecuteUbergraph_WBP_HurtTotalPanel(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HurtTotalPanel.WBP_HurtTotalPanel_C.WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0
-// (BlueprintEvent)
-
-void UWBP_HurtTotalPanel_C::WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HurtTotalPanel_C", "WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

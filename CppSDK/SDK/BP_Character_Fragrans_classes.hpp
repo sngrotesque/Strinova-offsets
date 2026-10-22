@@ -31,9 +31,9 @@ public:
 	class UTimelineComponent*                     Blinking;                                          // 0x1E80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Character_Fragrans(int32 EntryPoint);
-	void Blinking__UpdateFunc();
 	void Blinking__FinishedFunc();
+	void Blinking__UpdateFunc();
+	void ExecuteUbergraph_BP_Character_Fragrans(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

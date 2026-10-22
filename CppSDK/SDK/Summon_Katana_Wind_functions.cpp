@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_Katana_Wind.Summon_Katana_Wind_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASummon_Katana_Wind_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_Katana_Wind_C", "ReceiveTick");
+
+	Params::Summon_Katana_Wind_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Summon_Katana_Wind.Summon_Katana_Wind_C.ExecuteUbergraph_Summon_Katana_Wind
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void ASummon_Katana_Wind_C::ExecuteUbergraph_Summon_Katana_Wind(int32 EntryPoint
 	Params::Summon_Katana_Wind_C_ExecuteUbergraph_Summon_Katana_Wind Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_Katana_Wind.Summon_Katana_Wind_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASummon_Katana_Wind_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_Katana_Wind_C", "ReceiveTick");
-
-	Params::Summon_Katana_Wind_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

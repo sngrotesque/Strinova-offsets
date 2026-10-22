@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_X_KokonaShiki_Escort2.Summon_X_KokonaShiki_Escort2_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASummon_X_KokonaShiki_Escort2_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_X_KokonaShiki_Escort2_C", "ReceiveTick");
+
+	Params::Summon_X_KokonaShiki_Escort2_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Summon_X_KokonaShiki_Escort2.Summon_X_KokonaShiki_Escort2_C.ExecuteUbergraph_Summon_X_KokonaShiki_Escort2
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void ASummon_X_KokonaShiki_Escort2_C::ExecuteUbergraph_Summon_X_KokonaShiki_Esco
 	Params::Summon_X_KokonaShiki_Escort2_C_ExecuteUbergraph_Summon_X_KokonaShiki_Escort2 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_X_KokonaShiki_Escort2.Summon_X_KokonaShiki_Escort2_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASummon_X_KokonaShiki_Escort2_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_X_KokonaShiki_Escort2_C", "ReceiveTick");
-
-	Params::Summon_X_KokonaShiki_Escort2_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

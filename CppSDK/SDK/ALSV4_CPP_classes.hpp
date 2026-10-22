@@ -163,7 +163,7 @@ DUMPER7_ASSERTS_UALSAnimNotifyGroundedEntryState;
 
 // Class ALSV4_CPP.CyPhysicsAnimInstance
 // 0x0000 (0x0280 - 0x0280)
-class UCyPhysicsAnimInstance final : public UAnimInstance
+class UCyPhysicsAnimInstance : public UAnimInstance
 {
 public:
 	static class UClass* StaticClass()
@@ -405,13 +405,13 @@ DUMPER7_ASSERTS_UALSAnimNotifyFootstep;
 
 // Class ALSV4_CPP.CySubAnimInstanceMelee
 // 0x00A0 (0x0560 - 0x04C0)
-class UCySubAnimInstanceMelee final : public UCySubAnimInstanceWeapon
+#pragma pack(push, 0x1)
+class SDK_ALIGN(0x10) UCySubAnimInstanceMelee : public UCySubAnimInstanceWeapon
 {
 public:
 	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FCyWeaponSweepAnims                    Ready;                                             // 0x04F8(0x0048)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FCyWeaponOverrideAnims                 OverrideState;                                     // 0x0540(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_558[0x8];                                      // 0x0558(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -427,6 +427,7 @@ public:
 		return GetDefaultObjImpl<UCySubAnimInstanceMelee>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_UCySubAnimInstanceMelee;
 
 // Class ALSV4_CPP.ALSBaseCharacter
@@ -494,7 +495,7 @@ DUMPER7_ASSERTS_AALSBaseCharacter;
 
 // Class ALSV4_CPP.CySubAnimInstancePistol
 // 0x0110 (0x05D0 - 0x04C0)
-class UCySubAnimInstancePistol final : public UCySubAnimInstanceWeapon
+class UCySubAnimInstancePistol : public UCySubAnimInstanceWeapon
 {
 public:
 	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
@@ -1693,7 +1694,7 @@ DUMPER7_ASSERTS_ACyCharacter;
 
 // Class ALSV4_CPP.CyCharacterAnimInstance
 // 0x0320 (0x0D20 - 0x0A00)
-class UCyCharacterAnimInstance final : public UALSCharacterAnimInstance
+class UCyCharacterAnimInstance : public UALSCharacterAnimInstance
 {
 public:
 	class UAnimSequenceBase*                      N_Pose;                                            // 0x09F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1839,7 +1840,7 @@ DUMPER7_ASSERTS_ICyCharacterCameraInterface;
 
 // Class ALSV4_CPP.CyClothAnimInstance
 // 0x0000 (0x0280 - 0x0280)
-class UCyClothAnimInstance final : public UAnimInstance
+class UCyClothAnimInstance : public UAnimInstance
 {
 public:
 	static class UClass* StaticClass()
@@ -1878,14 +1879,14 @@ public:
 DUMPER7_ASSERTS_UCyLobbyPhysicsAnimInstance;
 
 // Class ALSV4_CPP.CyMasterMeshComponent
-// 0x0020 (0x0C60 - 0x0C40)
+// 0x0020 (0x0C70 - 0x0C50)
 class UCyMasterMeshComponent final : public USkeletalMeshComponent
 {
 public:
-	bool                                          bEnableCombine;                                    // 0x0C40(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C41[0x7];                                      // 0x0C41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USkeletalMesh*>                  CombinedMeshes;                                    // 0x0C48(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C58[0x8];                                      // 0x0C58(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bEnableCombine;                                    // 0x0C50(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C51[0x7];                                      // 0x0C51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USkeletalMesh*>                  CombinedMeshes;                                    // 0x0C58(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C68[0x8];                                      // 0x0C68(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2102,7 +2103,7 @@ public:
 DUMPER7_ASSERTS_UCyRollComponent;
 
 // Class ALSV4_CPP.CySlaveMeshComponent
-// 0x0000 (0x0C40 - 0x0C40)
+// 0x0000 (0x0C50 - 0x0C50)
 class UCySlaveMeshComponent final : public USkeletalMeshComponent
 {
 public:
@@ -2123,11 +2124,11 @@ DUMPER7_ASSERTS_UCySlaveMeshComponent;
 
 // Class ALSV4_CPP.CySubAnimInstanceDefault
 // 0x0030 (0x04F0 - 0x04C0)
-class UCySubAnimInstanceDefault final : public UCySubAnimInstanceWeapon
+#pragma pack(push, 0x1)
+class SDK_ALIGN(0x10) UCySubAnimInstanceDefault : public UCySubAnimInstanceWeapon
 {
 public:
 	struct FCyWeaponAnims                         Relaxed;                                           // 0x04B8(0x0030)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4E8[0x8];                                      // 0x04E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2143,11 +2144,12 @@ public:
 		return GetDefaultObjImpl<UCySubAnimInstanceDefault>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_UCySubAnimInstanceDefault;
 
 // Class ALSV4_CPP.CySubAnimInstanceRifle
 // 0x01D0 (0x0690 - 0x04C0)
-class UCySubAnimInstanceRifle final : public UCySubAnimInstanceWeapon
+class UCySubAnimInstanceRifle : public UCySubAnimInstanceWeapon
 {
 public:
 	struct FCyWeaponMoveAnims                     Relaxed;                                           // 0x04B8(0x0040)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)

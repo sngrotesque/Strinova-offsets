@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -26,8 +26,8 @@ public:
 	bool                                          Is_BUFF;                                           // 0x0AD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_BuffItem(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

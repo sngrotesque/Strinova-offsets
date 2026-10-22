@@ -154,6 +154,16 @@ public:
 };
 DUMPER7_ASSERTS_FTransformConstraint;
 
+// ScriptStruct AnimationCore.NodeObject
+// 0x0010 (0x0010 - 0x0000)
+struct FNodeObject final
+{
+public:
+	class FName                                   Name;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ParentName;                                        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FNodeObject;
+
 // ScriptStruct AnimationCore.ConstraintOffset
 // 0x0060 (0x0060 - 0x0000)
 struct FConstraintOffset final
@@ -207,16 +217,6 @@ public:
 	TArray<class FName>                           Nodes;                                             // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FNodeChain;
-
-// ScriptStruct AnimationCore.NodeObject
-// 0x0010 (0x0010 - 0x0000)
-struct FNodeObject final
-{
-public:
-	class FName                                   Name;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ParentName;                                        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FNodeObject;
 
 // ScriptStruct AnimationCore.NodeHierarchyData
 // 0x0070 (0x0070 - 0x0000)

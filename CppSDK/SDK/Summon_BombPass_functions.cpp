@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_BombPass.Summon_BombPass_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASummon_BombPass_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_BombPass_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Summon_BombPass.Summon_BombPass_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASummon_BombPass_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_BombPass_C", "ReceiveTick");
+
+	Params::Summon_BombPass_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Summon_BombPass.Summon_BombPass_C.ExecuteUbergraph_Summon_BombPass
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,40 +67,6 @@ void ASummon_BombPass_C::ExecuteUbergraph_Summon_BombPass(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_BombPass.Summon_BombPass_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASummon_BombPass_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_BombPass_C", "ReceiveTick");
-
-	Params::Summon_BombPass_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_BombPass.Summon_BombPass_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASummon_BombPass_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_BombPass_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

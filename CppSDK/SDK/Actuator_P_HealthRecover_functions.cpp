@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function Actuator_P_HealthRecover.Actuator_P_HealthRecover_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AActuator_P_HealthRecover_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_P_HealthRecover_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Actuator_P_HealthRecover.Actuator_P_HealthRecover_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AActuator_P_HealthRecover_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_P_HealthRecover_C", "ReceiveTick");
+
+	Params::Actuator_P_HealthRecover_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Actuator_P_HealthRecover.Actuator_P_HealthRecover_C.ExecuteUbergraph_Actuator_P_HealthRecover
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,40 +67,6 @@ void AActuator_P_HealthRecover_C::ExecuteUbergraph_Actuator_P_HealthRecover(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_P_HealthRecover.Actuator_P_HealthRecover_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AActuator_P_HealthRecover_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_P_HealthRecover_C", "ReceiveTick");
-
-	Params::Actuator_P_HealthRecover_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_P_HealthRecover.Actuator_P_HealthRecover_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AActuator_P_HealthRecover_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_P_HealthRecover_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -17,6 +17,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_HurtPanel.WBP_HurtPanel_C.OnAnimationFinished
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_HurtPanel_C_OnAnimationFinished final
+{
+public:
+	const class UWidgetAnimation*                 Animation_OnAnimationFinished;                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_HurtPanel_C_OnAnimationFinished;
+
+// Function WBP_HurtPanel.WBP_HurtPanel_C.DealHeadDamage
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_HurtPanel_C_DealHeadDamage final
+{
+public:
+	bool                                          bHeadDamage_DealHeadDamage;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_HurtPanel_C_DealHeadDamage;
+
 // Function WBP_HurtPanel.WBP_HurtPanel_C.ExecuteUbergraph_WBP_HurtPanel
 // 0x0050 (0x0050 - 0x0000)
 struct WBP_HurtPanel_C_ExecuteUbergraph_WBP_HurtPanel final
@@ -32,24 +50,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0028(0x0028)()
 };
 DUMPER7_ASSERTS_WBP_HurtPanel_C_ExecuteUbergraph_WBP_HurtPanel;
-
-// Function WBP_HurtPanel.WBP_HurtPanel_C.DealHeadDamage
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_HurtPanel_C_DealHeadDamage final
-{
-public:
-	bool                                          bHeadDamage;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_HurtPanel_C_DealHeadDamage;
-
-// Function WBP_HurtPanel.WBP_HurtPanel_C.OnAnimationFinished
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_HurtPanel_C_OnAnimationFinished final
-{
-public:
-	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_HurtPanel_C_OnAnimationFinished;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

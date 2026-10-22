@@ -16,16 +16,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Weapon_X_Huixing.Weapon_X_Huixing_C
-// 0x0030 (0x1320 - 0x12F0)
+// 0x0040 (0x1330 - 0x12F0)
 class Weapon_X_Huixing::AWeapon_X_Huixing_C final : public ACyWeaponQuickThrow
 {
 public:
-	class UCySearchUIComponent*                   CySearchUI;                                        // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyPartAccessory*                       CyPartAccessory;                                   // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCySkinComponent*                       CySkin;                                            // 0x12F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCyActuatorSpaceTeleportCompnent*       CyActuatorSpaceTeleportCompnent;                   // 0x1300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCyFStateMonitor*                       CyFMonitor_UnEquip;                                // 0x1308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCyFAttackStateMonitor*                 CyFAttackMonitor_Work;                             // 0x1310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x1318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyFAttackStateMonitor*                 CyFAttackMonitor_Idle;                             // 0x1318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x1320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchTargetsComponent*              CySearchTargets;                                   // 0x1328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

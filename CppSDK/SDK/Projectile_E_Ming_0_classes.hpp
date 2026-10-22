@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,8 +27,8 @@ public:
 	class UAkComponent*                           Ak;                                                // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Projectile_E_Ming(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_Projectile_E_Ming(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_KillMessagesItemPanel.WBP_KillMessagesItemPanel_C.SequenceEvent_0
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_KillMessagesItemPanel_C::SequenceEvent_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_KillMessagesItemPanel_C", "SequenceEvent_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_KillMessagesItemPanel.WBP_KillMessagesItemPanel_C.ExecuteUbergraph_WBP_KillMessagesItemPanel
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void UWBP_KillMessagesItemPanel_C::ExecuteUbergraph_WBP_KillMessagesItemPanel(in
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_KillMessagesItemPanel.WBP_KillMessagesItemPanel_C.SequenceEvent_0
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_KillMessagesItemPanel_C::SequenceEvent_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_KillMessagesItemPanel_C", "SequenceEvent_0");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

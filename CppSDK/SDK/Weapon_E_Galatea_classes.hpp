@@ -20,8 +20,7 @@ SDK_NAMESPACE_START
 class Weapon_E_Galatea::AWeapon_E_Galatea_C final : public ACyWeaponQuickThrow
 {
 public:
-	class UCyWeaponProjectClearLifeSpanComponent* CyWeaponProjectClearLifeSpan;                      // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x12F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

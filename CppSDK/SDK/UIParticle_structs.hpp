@@ -76,6 +76,20 @@ enum class ECurveType : uint8
 	ECurveType_MAX                           = 3,
 };
 
+// ScriptStruct UIParticle.ChildEmitter
+// 0x0018 (0x0018 - 0x0000)
+struct FChildEmitter final
+{
+public:
+	float                                         ActivityInParentLifeTime;                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          FollowParentPosition;                              // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FollowParentSpeedPercent;                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ZOrderOffset;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUIParticleEmitterAsset*                ChildrenAsset;                                     // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FChildEmitter;
+
 // ScriptStruct UIParticle.UIParticleEmitterInfo
 // 0x0018 (0x0018 - 0x0000)
 struct FUIParticleEmitterInfo final
@@ -90,14 +104,27 @@ public:
 };
 DUMPER7_ASSERTS_FUIParticleEmitterInfo;
 
-// ScriptStruct UIParticle.LerpKeyColor
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x04) FLerpKeyColor final
+// ScriptStruct UIParticle.Range_Vector2D
+// 0x0014 (0x0014 - 0x0000)
+struct FRange_Vector2D final
 {
 public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Min;                                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Max;                                               // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          RandomKey_X_Y;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FLerpKeyColor;
+DUMPER7_ASSERTS_FRange_Vector2D;
+
+// ScriptStruct UIParticle.Range_Float
+// 0x0008 (0x0008 - 0x0000)
+struct FRange_Float final
+{
+public:
+	float                                         Min;                                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Max;                                               // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRange_Float;
 
 // ScriptStruct UIParticle.UIParticleFloatCurve
 // 0x0088 (0x0088 - 0x0000)
@@ -111,16 +138,6 @@ public:
 };
 DUMPER7_ASSERTS_FUIParticleFloatCurve;
 
-// ScriptStruct UIParticle.Range_FloatCurve
-// 0x0110 (0x0110 - 0x0000)
-struct FRange_FloatCurve final
-{
-public:
-	struct FUIParticleFloatCurve                  Min;                                               // 0x0000(0x0088)(Edit, NativeAccessSpecifierPublic)
-	struct FUIParticleFloatCurve                  Max;                                               // 0x0088(0x0088)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRange_FloatCurve;
-
 // ScriptStruct UIParticle.UIParticleLinearColorCurve
 // 0x0208 (0x0208 - 0x0000)
 struct FUIParticleLinearColorCurve final
@@ -132,6 +149,16 @@ public:
 	uint8                                         Pad_202[0x6];                                      // 0x0202(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FUIParticleLinearColorCurve;
+
+// ScriptStruct UIParticle.Range_FloatCurve
+// 0x0110 (0x0110 - 0x0000)
+struct FRange_FloatCurve final
+{
+public:
+	struct FUIParticleFloatCurve                  Min;                                               // 0x0000(0x0088)(Edit, NativeAccessSpecifierPublic)
+	struct FUIParticleFloatCurve                  Max;                                               // 0x0088(0x0088)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRange_FloatCurve;
 
 // ScriptStruct UIParticle.Range_LinearColorCurve
 // 0x0418 (0x0418 - 0x0000)
@@ -149,28 +176,6 @@ public:
 	uint8                                         Pad_416[0x2];                                      // 0x0416(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRange_LinearColorCurve;
-
-// ScriptStruct UIParticle.Range_Float
-// 0x0008 (0x0008 - 0x0000)
-struct FRange_Float final
-{
-public:
-	float                                         Min;                                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Max;                                               // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRange_Float;
-
-// ScriptStruct UIParticle.Range_Vector2D
-// 0x0014 (0x0014 - 0x0000)
-struct FRange_Vector2D final
-{
-public:
-	struct FVector2D                              Min;                                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Max;                                               // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          RandomKey_X_Y;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRange_Vector2D;
 
 // ScriptStruct UIParticle.UIParticleProperty
 // 0x07E8 (0x07E8 - 0x0000)
@@ -231,19 +236,14 @@ public:
 };
 DUMPER7_ASSERTS_FScalarParamFloat;
 
-// ScriptStruct UIParticle.ChildEmitter
-// 0x0018 (0x0018 - 0x0000)
-struct FChildEmitter final
+// ScriptStruct UIParticle.LerpKeyColor
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x04) FLerpKeyColor final
 {
 public:
-	float                                         ActivityInParentLifeTime;                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          FollowParentPosition;                              // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         FollowParentSpeedPercent;                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ZOrderOffset;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUIParticleEmitterAsset*                ChildrenAsset;                                     // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FChildEmitter;
+DUMPER7_ASSERTS_FLerpKeyColor;
 
 // ScriptStruct UIParticle.LerpKeyVector2D
 // 0x0008 (0x0008 - 0x0000)

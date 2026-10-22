@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_BuffShowPanel.WBP_BuffShowPanel_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BuffShowPanel_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_BuffShowPanel_C_PreConstruct;
+
 // Function WBP_BuffShowPanel.WBP_BuffShowPanel_C.ExecuteUbergraph_WBP_BuffShowPanel
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_BuffShowPanel_C_ExecuteUbergraph_WBP_BuffShowPanel final
@@ -36,15 +45,6 @@ public:
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue_1;      // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_BuffShowPanel_C_ExecuteUbergraph_WBP_BuffShowPanel;
-
-// Function WBP_BuffShowPanel.WBP_BuffShowPanel_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BuffShowPanel_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_BuffShowPanel_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

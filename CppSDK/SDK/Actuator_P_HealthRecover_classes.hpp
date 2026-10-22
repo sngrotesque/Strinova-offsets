@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,9 +28,9 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x08B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Actuator_P_HealthRecover(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ExecuteUbergraph_Actuator_P_HealthRecover(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function Summon_Q_Nora.Summon_Q_Nora_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct Summon_Q_Nora_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Summon_Q_Nora_C_ReceiveTick;
+
 // Function Summon_Q_Nora.Summon_Q_Nora_C.ExecuteUbergraph_Summon_Q_Nora
 // 0x0008 (0x0008 - 0x0000)
 struct Summon_Q_Nora_C_ExecuteUbergraph_Summon_Q_Nora final
@@ -23,15 +32,6 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_Summon_Q_Nora_C_ExecuteUbergraph_Summon_Q_Nora;
-
-// Function Summon_Q_Nora.Summon_Q_Nora_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct Summon_Q_Nora_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_Summon_Q_Nora_C_ReceiveTick;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

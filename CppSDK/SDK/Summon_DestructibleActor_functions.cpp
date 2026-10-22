@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_DestructibleActor.Summon_DestructibleActor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASummon_DestructibleActor_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_DestructibleActor_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Summon_DestructibleActor.Summon_DestructibleActor_C.ExecuteUbergraph_Summon_DestructibleActor
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ASummon_DestructibleActor_C::ExecuteUbergraph_Summon_DestructibleActor(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_DestructibleActor.Summon_DestructibleActor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASummon_DestructibleActor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_DestructibleActor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

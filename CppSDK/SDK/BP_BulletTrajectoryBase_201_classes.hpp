@@ -16,12 +16,9 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BulletTrajectoryBase_201.BP_BulletTrajectoryBase_201_C
-// 0x0008 (0x0330 - 0x0328)
+// 0x0000 (0x0328 - 0x0328)
 class BP_BulletTrajectoryBase_201::ABP_BulletTrajectoryBase_201_C final : public ACyBulletTrajectory
 {
-public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
 public:
 	static class UClass* StaticClass()
 	{

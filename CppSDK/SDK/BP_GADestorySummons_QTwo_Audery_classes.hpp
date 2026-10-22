@@ -17,22 +17,22 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_GADestorySummons_QTwo_Audery.BP_GADestorySummons_QTwo_Audery_C
 // 0x0000 (0x0238 - 0x0238)
-class BP_GADestorySummons_QTwo_Audery::UBP_GADestorySummons_QTwo_Audery_C final : public UCyGAActivatorDestorySummons
+class UBP_GADestorySummons_QTwo_Audery_C final : public UCyGAActivatorDestorySummons
 {
 public:
 	static class UClass* StaticClass()
 	{
-		BP_STATIC_CLASS_IMPL_FULLNAME("BlueprintGeneratedClass BP_GADestorySummons_QTwo_Audery.BP_GADestorySummons_QTwo_Audery_C")
+		BP_STATIC_CLASS_IMPL("BP_GADestorySummons_QTwo_Audery_C")
 	}
 	static const class FName& StaticName()
 	{
 		STATIC_NAME_IMPL(L"BP_GADestorySummons_QTwo_Audery_C")
 	}
-	static class BP_GADestorySummons_QTwo_Audery::UBP_GADestorySummons_QTwo_Audery_C* GetDefaultObj()
+	static class UBP_GADestorySummons_QTwo_Audery_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_GADestorySummons_QTwo_Audery::UBP_GADestorySummons_QTwo_Audery_C>();
+		return GetDefaultObjImpl<UBP_GADestorySummons_QTwo_Audery_C>();
 	}
 };
-DUMPER7_ASSERTS_BP_GADestorySummons_QTwo_Audery__UBP_GADestorySummons_QTwo_Audery_C;
+DUMPER7_ASSERTS_UBP_GADestorySummons_QTwo_Audery_C;
 
 SDK_NAMESPACE_END

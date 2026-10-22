@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function Projectile_E_Chiyo.Projectile_E_Chiyo_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProjectile_E_Chiyo_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_E_Chiyo_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Projectile_E_Chiyo.Projectile_E_Chiyo_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProjectile_E_Chiyo_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_E_Chiyo_C", "ReceiveTick");
+
+	Params::Projectile_E_Chiyo_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Projectile_E_Chiyo.Projectile_E_Chiyo_C.ExecuteUbergraph_Projectile_E_Chiyo
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,40 +67,6 @@ void AProjectile_E_Chiyo_C::ExecuteUbergraph_Projectile_E_Chiyo(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_E_Chiyo.Projectile_E_Chiyo_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProjectile_E_Chiyo_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_E_Chiyo_C", "ReceiveTick");
-
-	Params::Projectile_E_Chiyo_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_E_Chiyo.Projectile_E_Chiyo_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProjectile_E_Chiyo_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_E_Chiyo_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

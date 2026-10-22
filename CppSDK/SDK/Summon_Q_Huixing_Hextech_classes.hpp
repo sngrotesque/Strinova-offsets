@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Summon_Q_Huixing_0_classes.hpp"
+#include "Summon_Q_Huixing_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Summon_Q_Huixing_Hextech.Summon_Q_Huixing_Hextech_C
 // 0x0000 (0x0910 - 0x0910)
-class ASummon_Q_Huixing_Hextech_C final : public Summon_Q_Huixing_0::ASummon_Q_Huixing_C
+class ASummon_Q_Huixing_Hextech_C final : public Summon_Q_Huixing::ASummon_Q_Huixing_C
 {
 public:
 	static class UClass* StaticClass()

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AtomDecalMaterial_Work_Dissolve.BP_AtomDecalMaterial_Work_Dissolve_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x0620 - 0x0620)
 class BP_AtomDecalMaterial_Work_Dissolve_1::UBP_AtomDecalMaterial_Work_Dissolve_C final : public UCySAtomDecalMaterial
 {
 public:

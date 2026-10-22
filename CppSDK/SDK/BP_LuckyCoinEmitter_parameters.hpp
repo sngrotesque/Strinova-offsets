@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_LuckyCoinEmitter.BP_LuckyCoinEmitter_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_LuckyCoinEmitter_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason_ReceiveEndPlay;                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LuckyCoinEmitter_C_ReceiveEndPlay;
+
 // Function BP_LuckyCoinEmitter.BP_LuckyCoinEmitter_C.ExecuteUbergraph_BP_LuckyCoinEmitter
 // 0x0008 (0x0008 - 0x0000)
 struct BP_LuckyCoinEmitter_C_ExecuteUbergraph_BP_LuckyCoinEmitter final
@@ -25,15 +34,6 @@ public:
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_LuckyCoinEmitter_C_ExecuteUbergraph_BP_LuckyCoinEmitter;
-
-// Function BP_LuckyCoinEmitter.BP_LuckyCoinEmitter_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_LuckyCoinEmitter_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LuckyCoinEmitter_C_ReceiveEndPlay;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

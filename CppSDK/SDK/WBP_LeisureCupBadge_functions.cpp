@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_LeisureCupBadge.WBP_LeisureCupBadge_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_LeisureCupBadge_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LeisureCupBadge_C", "PreConstruct");
+
+	Params::WBP_LeisureCupBadge_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_LeisureCupBadge.WBP_LeisureCupBadge_C.ExecuteUbergraph_WBP_LeisureCupBadge
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void UWBP_LeisureCupBadge_C::ExecuteUbergraph_WBP_LeisureCupBadge(int32 EntryPoi
 	Params::WBP_LeisureCupBadge_C_ExecuteUbergraph_WBP_LeisureCupBadge Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LeisureCupBadge.WBP_LeisureCupBadge_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_LeisureCupBadge_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LeisureCupBadge_C", "PreConstruct");
-
-	Params::WBP_LeisureCupBadge_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

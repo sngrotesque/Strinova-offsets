@@ -16,23 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Character_Michele.BP_Character_Michele_C.ExecuteUbergraph_BP_Character_Michele
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Character_Michele.BP_Character_Michele_C.Blinking__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_Character_Michele_C::ExecuteUbergraph_BP_Character_Michele(int32 EntryPoint)
+void ABP_Character_Michele_C::Blinking__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Michele_C", "ExecuteUbergraph_BP_Character_Michele");
+		Func = Class->GetFunction("BP_Character_Michele_C", "Blinking__FinishedFunc");
 
-	Params::BP_Character_Michele_C_ExecuteUbergraph_BP_Character_Michele Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -50,17 +44,23 @@ void ABP_Character_Michele_C::Blinking__UpdateFunc()
 }
 
 
-// Function BP_Character_Michele.BP_Character_Michele_C.Blinking__FinishedFunc
-// (BlueprintEvent)
+// Function BP_Character_Michele.BP_Character_Michele_C.ExecuteUbergraph_BP_Character_Michele
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Character_Michele_C::Blinking__FinishedFunc()
+void ABP_Character_Michele_C::ExecuteUbergraph_BP_Character_Michele(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Michele_C", "Blinking__FinishedFunc");
+		Func = Class->GetFunction("BP_Character_Michele_C", "ExecuteUbergraph_BP_Character_Michele");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Character_Michele_C_ExecuteUbergraph_BP_Character_Michele Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

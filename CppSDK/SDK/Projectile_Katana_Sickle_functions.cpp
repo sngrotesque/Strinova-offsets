@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Projectile_Katana_Sickle.Projectile_Katana_Sickle_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProjectile_Katana_Sickle_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_Katana_Sickle_C", "ReceiveTick");
+
+	Params::Projectile_Katana_Sickle_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Projectile_Katana_Sickle.Projectile_Katana_Sickle_C.ExecuteUbergraph_Projectile_Katana_Sickle
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void AProjectile_Katana_Sickle_C::ExecuteUbergraph_Projectile_Katana_Sickle(int3
 	Params::Projectile_Katana_Sickle_C_ExecuteUbergraph_Projectile_Katana_Sickle Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_Katana_Sickle.Projectile_Katana_Sickle_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProjectile_Katana_Sickle_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_Katana_Sickle_C", "ReceiveTick");
-
-	Params::Projectile_Katana_Sickle_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

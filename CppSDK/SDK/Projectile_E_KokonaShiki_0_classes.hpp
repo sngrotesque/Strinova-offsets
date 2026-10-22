@@ -10,24 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Projectile_E_KokonaShiki.Projectile_E_KokonaShiki_C
-// 0x0010 (0x0B60 - 0x0B50)
+// 0x0018 (0x0B68 - 0x0B50)
 class Projectile_E_KokonaShiki_0::AProjectile_E_KokonaShiki_C final : public ACyProjectileBlast
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B50(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Projectile_E_KokonaShiki(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ExecuteUbergraph_Projectile_E_KokonaShiki(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

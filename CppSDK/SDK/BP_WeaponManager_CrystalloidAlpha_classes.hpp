@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_WeaponManager_CrystalloidAlpha.BP_WeaponManager_CrystalloidAlpha_C
-// 0x0000 (0x1730 - 0x1730)
+// 0x0000 (0x1740 - 0x1740)
 class UBP_WeaponManager_CrystalloidAlpha_C : public UBP_WeaponManager_C
 {
 public:

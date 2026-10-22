@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_BuffItem.WBP_BuffItem_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BuffItem_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_BuffItem_C_PreConstruct;
+
 // Function WBP_BuffItem.WBP_BuffItem_C.ExecuteUbergraph_WBP_BuffItem
 // 0x0090 (0x0090 - 0x0000)
 struct WBP_BuffItem_C_ExecuteUbergraph_WBP_BuffItem final
@@ -28,15 +37,6 @@ public:
 	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0008(0x0088)(ConstParm)
 };
 DUMPER7_ASSERTS_WBP_BuffItem_C_ExecuteUbergraph_WBP_BuffItem;
-
-// Function WBP_BuffItem.WBP_BuffItem_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BuffItem_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_BuffItem_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

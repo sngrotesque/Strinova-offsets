@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Projectile_E_Ming_Escort2.Projectile_E_Ming_Escort2_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AProjectile_E_Ming_Escort2_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_E_Ming_Escort2_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Projectile_E_Ming_Escort2.Projectile_E_Ming_Escort2_C.ExecuteUbergraph_Projectile_E_Ming_Escort2
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void AProjectile_E_Ming_Escort2_C::ExecuteUbergraph_Projectile_E_Ming_Escort2(in
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_E_Ming_Escort2.Projectile_E_Ming_Escort2_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AProjectile_E_Ming_Escort2_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_E_Ming_Escort2_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

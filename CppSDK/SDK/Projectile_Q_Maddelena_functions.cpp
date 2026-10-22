@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function Projectile_Q_Maddelena.Projectile_Q_Maddelena_C.ExecuteUbergraph_Projectile_Q_Maddelena
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Projectile_Q_Maddelena::AProjectile_Q_Maddelena_C::ExecuteUbergraph_Projectile_Q_Maddelena(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_Q_Maddelena_C", "ExecuteUbergraph_Projectile_Q_Maddelena");
-
-	Params::Projectile_Q_Maddelena_C_ExecuteUbergraph_Projectile_Q_Maddelena Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Projectile_Q_Maddelena.Projectile_Q_Maddelena_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -51,6 +31,26 @@ void Projectile_Q_Maddelena::AProjectile_Q_Maddelena_C::ReceiveTick(float DeltaS
 	Params::Projectile_Q_Maddelena_C_ReceiveTick Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Projectile_Q_Maddelena.Projectile_Q_Maddelena_C.ExecuteUbergraph_Projectile_Q_Maddelena
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Projectile_Q_Maddelena::AProjectile_Q_Maddelena_C::ExecuteUbergraph_Projectile_Q_Maddelena(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_Q_Maddelena_C", "ExecuteUbergraph_Projectile_Q_Maddelena");
+
+	Params::Projectile_Q_Maddelena_C_ExecuteUbergraph_Projectile_Q_Maddelena Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

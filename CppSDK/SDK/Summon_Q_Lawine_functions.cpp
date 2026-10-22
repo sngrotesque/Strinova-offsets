@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_Q_Lawine.Summon_Q_Lawine_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Summon_Q_Lawine::ASummon_Q_Lawine_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_Q_Lawine_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Summon_Q_Lawine.Summon_Q_Lawine_C.ExecuteUbergraph_Summon_Q_Lawine
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void Summon_Q_Lawine::ASummon_Q_Lawine_C::ExecuteUbergraph_Summon_Q_Lawine(int32
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_Q_Lawine.Summon_Q_Lawine_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Summon_Q_Lawine::ASummon_Q_Lawine_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_Q_Lawine_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

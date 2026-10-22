@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function Summon_Q_Nora.Summon_Q_Nora_C.ExecuteUbergraph_Summon_Q_Nora
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASummon_Q_Nora_C::ExecuteUbergraph_Summon_Q_Nora(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_Q_Nora_C", "ExecuteUbergraph_Summon_Q_Nora");
-
-	Params::Summon_Q_Nora_C_ExecuteUbergraph_Summon_Q_Nora Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Summon_Q_Nora.Summon_Q_Nora_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -51,6 +31,26 @@ void ASummon_Q_Nora_C::ReceiveTick(float DeltaSeconds)
 	Params::Summon_Q_Nora_C_ReceiveTick Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Summon_Q_Nora.Summon_Q_Nora_C.ExecuteUbergraph_Summon_Q_Nora
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASummon_Q_Nora_C::ExecuteUbergraph_Summon_Q_Nora(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_Q_Nora_C", "ExecuteUbergraph_Summon_Q_Nora");
+
+	Params::Summon_Q_Nora_C_ExecuteUbergraph_Summon_Q_Nora Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

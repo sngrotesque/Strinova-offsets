@@ -16,37 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Class CinematicCamera.CameraRig_Rail
-// 0x0020 (0x0330 - 0x0310)
-class ACameraRig_Rail final : public AActor
-{
-public:
-	float                                         CurrentPositionOnRail;                             // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLockOrientationToRail;                            // 0x0314(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        TransformComponent;                                // 0x0318(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USplineComponent*                       RailSplineComponent;                               // 0x0320(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USceneComponent*                        RailCameraMount;                                   // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	class USplineComponent* GetRailSplineComponent();
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("CameraRig_Rail")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"CameraRig_Rail")
-	}
-	static class ACameraRig_Rail* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ACameraRig_Rail>();
-	}
-};
-DUMPER7_ASSERTS_ACameraRig_Rail;
-
 // Class CinematicCamera.CineCameraActor
 // 0x0060 (0x0930 - 0x08D0)
 class ACineCameraActor : public ACameraActor
@@ -105,6 +74,37 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ACameraRig_Crane;
+
+// Class CinematicCamera.CameraRig_Rail
+// 0x0020 (0x0330 - 0x0310)
+class ACameraRig_Rail final : public AActor
+{
+public:
+	float                                         CurrentPositionOnRail;                             // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLockOrientationToRail;                            // 0x0314(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        TransformComponent;                                // 0x0318(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USplineComponent*                       RailSplineComponent;                               // 0x0320(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USceneComponent*                        RailCameraMount;                                   // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	class USplineComponent* GetRailSplineComponent();
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("CameraRig_Rail")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraRig_Rail")
+	}
+	static class ACameraRig_Rail* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ACameraRig_Rail>();
+	}
+};
+DUMPER7_ASSERTS_ACameraRig_Rail;
 
 // Class CinematicCamera.CineCameraComponent
 // 0x0100 (0x0980 - 0x0880)

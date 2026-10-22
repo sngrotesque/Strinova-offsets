@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function Projectile_E_Lawine.Projectile_E_Lawine_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Projectile_E_Lawine_0::AProjectile_E_Lawine_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_E_Lawine_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Projectile_E_Lawine.Projectile_E_Lawine_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Projectile_E_Lawine_0::AProjectile_E_Lawine_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_E_Lawine_C", "ReceiveTick");
+
+	Params::Projectile_E_Lawine_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Projectile_E_Lawine.Projectile_E_Lawine_C.ExecuteUbergraph_Projectile_E_Lawine
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,40 +67,6 @@ void Projectile_E_Lawine_0::AProjectile_E_Lawine_C::ExecuteUbergraph_Projectile_
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_E_Lawine.Projectile_E_Lawine_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Projectile_E_Lawine_0::AProjectile_E_Lawine_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_E_Lawine_C", "ReceiveTick");
-
-	Params::Projectile_E_Lawine_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_E_Lawine.Projectile_E_Lawine_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Projectile_E_Lawine_0::AProjectile_E_Lawine_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_E_Lawine_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

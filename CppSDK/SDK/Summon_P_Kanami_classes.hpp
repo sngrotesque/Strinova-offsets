@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Summon_P_Kanami.Summon_P_Kanami_C
 // 0x0050 (0x08F0 - 0x08A0)
-class Summon_P_Kanami::ASummon_P_Kanami_C final : public ACySummonActor
+class Summon_P_Kanami::ASummon_P_Kanami_C : public ACySummonActor
 {
 public:
 	uint8                                         Pad_898[0x8];                                      // 0x0898(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

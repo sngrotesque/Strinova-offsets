@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -41,8 +41,8 @@ public:
 	class UAkAutoComponent*                       AkAuto;                                            // 0x0BD8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_Projectile_Katana_Sickle(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

@@ -16,8 +16,8 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Trigger_AddEffects.BP_Trigger_AddEffects_C
-// 0x0000 (0x0268 - 0x0268)
-class BP_Trigger_AddEffects_1::UBP_Trigger_AddEffects_C final : public UCyGATriggerAddEffects
+// 0x0000 (0x0258 - 0x0258)
+class BP_Trigger_AddEffects_1::UBP_Trigger_AddEffects_C final : public UCyGATriggerAddEffectsToActuator
 {
 public:
 	static class UClass* StaticClass()

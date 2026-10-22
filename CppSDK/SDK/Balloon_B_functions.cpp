@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Balloon_B.Balloon_B_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABalloon_B_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Balloon_B_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Balloon_B.Balloon_B_C.ExecuteUbergraph_Balloon_B
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ABalloon_B_C::ExecuteUbergraph_Balloon_B(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Balloon_B.Balloon_B_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABalloon_B_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Balloon_B_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

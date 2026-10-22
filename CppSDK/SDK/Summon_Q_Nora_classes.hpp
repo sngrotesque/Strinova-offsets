@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -57,8 +57,8 @@ public:
 	class UCameraComponent*                       Camera;                                            // 0x0F80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Summon_Q_Nora(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
+	void ExecuteUbergraph_Summon_Q_Nora(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

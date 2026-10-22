@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -24,9 +24,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B88(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
+	class UTextureRenderTarget2D* TryBlueprintExport(float InDeltaTime_TryBlueprintExport, const struct FVector2D& InOutSize_TryBlueprintExport);
+	void TryToExportRT_PNG(class UTextureRenderTarget2D* InRT_TryToExportRT_PNG, const struct FVector2D& InOutSize_TryToExportRT_PNG, int32 PathKeyIndex_TryToExportRT_PNG, int32 OutputIndex_TryToExportRT_PNG);
 	void ExecuteUbergraph_WBP_IconFeedbackContainerPage(int32 EntryPoint);
-	void TryToExportRT_PNG(class UTextureRenderTarget2D* InRT, const struct FVector2D& InOutSize, int32 PathKeyIndex, int32 OutputIndex);
-	class UTextureRenderTarget2D* TryBlueprintExport(float InDeltaTime, const struct FVector2D& InOutSize);
 
 public:
 	static class UClass* StaticClass()

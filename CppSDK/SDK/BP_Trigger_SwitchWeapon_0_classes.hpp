@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Trigger_SwitchWeapon.BP_Trigger_SwitchWeapon_C
-// 0x0000 (0x0248 - 0x0248)
+// 0x0000 (0x0258 - 0x0258)
 class BP_Trigger_SwitchWeapon_0::UBP_Trigger_SwitchWeapon_C final : public UCyGATriggerSwitchWeapon
 {
 public:

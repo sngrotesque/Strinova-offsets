@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HurtPanel.WBP_HurtPanel_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation_OnAnimationFinished                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HurtPanel_C::OnAnimationFinished(const class UWidgetAnimation* Animation_OnAnimationFinished)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HurtPanel_C", "OnAnimationFinished");
+
+	Params::WBP_HurtPanel_C_OnAnimationFinished Parms{};
+
+	Parms.Animation_OnAnimationFinished = Animation_OnAnimationFinished;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HurtPanel.WBP_HurtPanel_C.DealHeadDamage
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bHeadDamage_DealHeadDamage                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_HurtPanel_C::DealHeadDamage(bool bHeadDamage_DealHeadDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HurtPanel_C", "DealHeadDamage");
+
+	Params::WBP_HurtPanel_C_DealHeadDamage Parms{};
+
+	Parms.bHeadDamage_DealHeadDamage = bHeadDamage_DealHeadDamage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_HurtPanel.WBP_HurtPanel_C.ExecuteUbergraph_WBP_HurtPanel
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,46 +71,6 @@ void UWBP_HurtPanel_C::ExecuteUbergraph_WBP_HurtPanel(int32 EntryPoint)
 	Params::WBP_HurtPanel_C_ExecuteUbergraph_WBP_HurtPanel Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HurtPanel.WBP_HurtPanel_C.DealHeadDamage
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bHeadDamage                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_HurtPanel_C::DealHeadDamage(bool bHeadDamage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HurtPanel_C", "DealHeadDamage");
-
-	Params::WBP_HurtPanel_C_DealHeadDamage Parms{};
-
-	Parms.bHeadDamage = bHeadDamage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HurtPanel.WBP_HurtPanel_C.OnAnimationFinished
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_HurtPanel_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HurtPanel_C", "OnAnimationFinished");
-
-	Params::WBP_HurtPanel_C_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

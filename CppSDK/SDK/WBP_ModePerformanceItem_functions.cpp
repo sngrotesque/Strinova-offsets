@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ModePerformanceItem.WBP_ModePerformanceItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_ModePerformanceItem_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModePerformanceItem_C", "PreConstruct");
+
+	Params::WBP_ModePerformanceItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ModePerformanceItem.WBP_ModePerformanceItem_C.ExecuteUbergraph_WBP_ModePerformanceItem
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void UWBP_ModePerformanceItem_C::ExecuteUbergraph_WBP_ModePerformanceItem(int32 
 	Params::WBP_ModePerformanceItem_C_ExecuteUbergraph_WBP_ModePerformanceItem Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModePerformanceItem.WBP_ModePerformanceItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ModePerformanceItem_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModePerformanceItem_C", "PreConstruct");
-
-	Params::WBP_ModePerformanceItem_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Payload_Cave.BP_Payload_Cave_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Payload_Cave_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Payload_Cave_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Payload_Cave.BP_Payload_Cave_C.ExecuteUbergraph_BP_Payload_Cave
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ABP_Payload_Cave_C::ExecuteUbergraph_BP_Payload_Cave(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Payload_Cave.BP_Payload_Cave_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Payload_Cave_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Payload_Cave_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

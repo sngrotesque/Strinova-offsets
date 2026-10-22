@@ -16,8 +16,8 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Detector_PlacementLocation.BP_Detector_PlacementLocation_C
-// 0x0000 (0x0218 - 0x0218)
-class BP_Detector_PlacementLocation::UBP_Detector_PlacementLocation_C final : public UCyLocationDetectorPlacement
+// 0x0000 (0x0228 - 0x0228)
+class BP_Detector_PlacementLocation::UBP_Detector_PlacementLocation_C final : public UCyLocationDetectorPlacementForce
 {
 public:
 	static class UClass* StaticClass()

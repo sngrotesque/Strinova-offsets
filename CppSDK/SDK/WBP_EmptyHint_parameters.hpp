@@ -16,6 +16,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_EmptyHint.WBP_EmptyHint_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_EmptyHint_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_EmptyHint_C_PreConstruct;
+
+// Function WBP_EmptyHint.WBP_EmptyHint_C.SetText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_EmptyHint_C_SetText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_EmptyHint_C_SetText;
+
 // Function WBP_EmptyHint.WBP_EmptyHint_C.ExecuteUbergraph_WBP_EmptyHint
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_EmptyHint_C_ExecuteUbergraph_WBP_EmptyHint final
@@ -33,24 +51,6 @@ public:
 	class FText                                   K2Node_CustomEvent_InText;                         // 0x0018(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_EmptyHint_C_ExecuteUbergraph_WBP_EmptyHint;
-
-// Function WBP_EmptyHint.WBP_EmptyHint_C.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_EmptyHint_C_SetText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_EmptyHint_C_SetText;
-
-// Function WBP_EmptyHint.WBP_EmptyHint_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_EmptyHint_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_EmptyHint_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

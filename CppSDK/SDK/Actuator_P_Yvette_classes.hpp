@@ -21,7 +21,7 @@ class Actuator_P_Yvette::AActuator_P_Yvette_C final : public ACySummonActor
 {
 public:
 	uint8                                         Pad_898[0x8];                                      // 0x0898(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class BP_ActuatorComponent_P_Yvette_0::UBP_ActuatorComponent_P_Yvette_C* BP_ActuatorComponent_P_Yvette; // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class BP_ActuatorComponent_P_Yvette::UBP_ActuatorComponent_P_Yvette_C* BP_ActuatorComponent_P_Yvette; // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x08A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:

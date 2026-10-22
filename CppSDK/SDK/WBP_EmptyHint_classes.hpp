@@ -30,10 +30,10 @@ public:
 	bool                                          bShowBlur;                                         // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void ExecuteUbergraph_WBP_EmptyHint(int32 EntryPoint);
-	void PlayOpenAnim();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void SetText(const class FText& InText);
-	void PreConstruct(bool IsDesignTime);
+	void PlayOpenAnim();
+	void ExecuteUbergraph_WBP_EmptyHint(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

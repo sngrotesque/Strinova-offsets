@@ -15,25 +15,25 @@
 
 SDK_NAMESPACE_START
 
-// Class AudioExtensions.ReverbPluginSourceSettingsBase
+// Class AudioExtensions.SoundfieldEffectSettingsBase
 // 0x0000 (0x0028 - 0x0028)
-class UReverbPluginSourceSettingsBase final : public UObject
+class USoundfieldEffectSettingsBase final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("ReverbPluginSourceSettingsBase")
+		STATIC_CLASS_IMPL("SoundfieldEffectSettingsBase")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"ReverbPluginSourceSettingsBase")
+		STATIC_NAME_IMPL(L"SoundfieldEffectSettingsBase")
 	}
-	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
+	static class USoundfieldEffectSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
+		return GetDefaultObjImpl<USoundfieldEffectSettingsBase>();
 	}
 };
-DUMPER7_ASSERTS_UReverbPluginSourceSettingsBase;
+DUMPER7_ASSERTS_USoundfieldEffectSettingsBase;
 
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -135,6 +135,26 @@ public:
 };
 DUMPER7_ASSERTS_USoundModulationPluginSourceSettingsBase;
 
+// Class AudioExtensions.ReverbPluginSourceSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class UReverbPluginSourceSettingsBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ReverbPluginSourceSettingsBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReverbPluginSourceSettingsBase")
+	}
+	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
+	}
+};
+DUMPER7_ASSERTS_UReverbPluginSourceSettingsBase;
+
 // Class AudioExtensions.SoundfieldEndpointSettingsBase
 // 0x0000 (0x0028 - 0x0028)
 class USoundfieldEndpointSettingsBase final : public UObject
@@ -154,26 +174,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_USoundfieldEndpointSettingsBase;
-
-// Class AudioExtensions.SoundfieldEffectSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class USoundfieldEffectSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("SoundfieldEffectSettingsBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"SoundfieldEffectSettingsBase")
-	}
-	static class USoundfieldEffectSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USoundfieldEffectSettingsBase>();
-	}
-};
-DUMPER7_ASSERTS_USoundfieldEffectSettingsBase;
 
 // Class AudioExtensions.SoundfieldEffectBase
 // 0x0008 (0x0030 - 0x0028)

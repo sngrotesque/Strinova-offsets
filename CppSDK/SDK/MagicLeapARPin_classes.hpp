@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "MagicLeapARPin_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_classes.hpp"
-#include "MagicLeapARPin_structs.hpp"
 
 
 SDK_NAMESPACE_START

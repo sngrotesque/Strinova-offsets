@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -25,9 +25,9 @@ public:
 	class UWidgetAnimation*                       HurtAnim;                                          // 0x0628(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnAnimationFinished(const class UWidgetAnimation* Animation_OnAnimationFinished);
+	void DealHeadDamage(bool bHeadDamage_DealHeadDamage);
 	void ExecuteUbergraph_WBP_HurtPanel(int32 EntryPoint);
-	void DealHeadDamage(bool bHeadDamage);
-	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 
 public:
 	static class UClass* StaticClass()

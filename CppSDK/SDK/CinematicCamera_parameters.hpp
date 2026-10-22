@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent
-// 0x0008 (0x0008 - 0x0000)
-struct CameraRig_Rail_GetRailSplineComponent final
-{
-public:
-	class USplineComponent*                       ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_CameraRig_Rail_GetRailSplineComponent;
-
 // Function CinematicCamera.CineCameraActor.GetCineCameraComponent
 // 0x0008 (0x0008 - 0x0000)
 struct CineCameraActor_GetCineCameraComponent final
@@ -33,6 +24,15 @@ public:
 	class UCineCameraComponent*                   ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_CineCameraActor_GetCineCameraComponent;
+
+// Function CinematicCamera.CameraRig_Rail.GetRailSplineComponent
+// 0x0008 (0x0008 - 0x0000)
+struct CameraRig_Rail_GetRailSplineComponent final
+{
+public:
+	class USplineComponent*                       ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_CameraRig_Rail_GetRailSplineComponent;
 
 // Function CinematicCamera.CineCameraComponent.GetLensPresetsCopy
 // 0x0010 (0x0010 - 0x0000)

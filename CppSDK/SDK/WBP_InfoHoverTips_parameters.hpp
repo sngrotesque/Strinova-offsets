@@ -16,24 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_InfoHoverTips.WBP_InfoHoverTips_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_InfoHoverTips_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_InfoHoverTips_C_PreConstruct;
-
-// Function WBP_InfoHoverTips.WBP_InfoHoverTips_C.SetTipsText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InfoHoverTips_C_SetTipsText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_InfoHoverTips_C_SetTipsText;
-
 // Function WBP_InfoHoverTips.WBP_InfoHoverTips_C.ExecuteUbergraph_WBP_InfoHoverTips
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_InfoHoverTips_C_ExecuteUbergraph_WBP_InfoHoverTips final
@@ -51,6 +33,24 @@ public:
 	class FText                                   K2Node_CustomEvent_InText;                         // 0x0028(0x0018)(ConstParm)
 };
 DUMPER7_ASSERTS_WBP_InfoHoverTips_C_ExecuteUbergraph_WBP_InfoHoverTips;
+
+// Function WBP_InfoHoverTips.WBP_InfoHoverTips_C.SetTipsText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InfoHoverTips_C_SetTipsText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_InfoHoverTips_C_SetTipsText;
+
+// Function WBP_InfoHoverTips.WBP_InfoHoverTips_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_InfoHoverTips_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_InfoHoverTips_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

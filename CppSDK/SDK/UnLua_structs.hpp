@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "PMGame_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -23,14 +23,16 @@ SDK_NAMESPACE_START
 struct FPropertyCollector final
 {
 public:
-	class UPMLuaBaseObject*                       None;                                              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCyApartmentGarageKitSeverConfig       None_0;                                            // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   None_1;                                            // 0x0000(0x0018)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    None_2;                                            // 0x0000(0x0040)(HasGetValueTypeHash)
-	struct FInputAxisKeyMapping                   None_3;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
-	struct FIntPoint                              None_4;                                            // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMonitorInfomation                     None_5;                                            // 0x0000(0x0030)(HasGetValueTypeHash)
-	struct FInputActionKeyMapping                 None_6;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
+	ECyItemQualityType                            None;                                              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         None_0;                                            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPMLuaBaseObject*                       None_1;                                            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FCyApartmentGarageKitSeverConfig       None_2;                                            // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   None_3;                                            // 0x0000(0x0018)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    None_4;                                            // 0x0000(0x0040)(HasGetValueTypeHash)
+	struct FInputAxisKeyMapping                   None_5;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
+	struct FIntPoint                              None_6;                                            // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMonitorInfomation                     None_7;                                            // 0x0000(0x0030)(HasGetValueTypeHash)
+	struct FInputActionKeyMapping                 None_8;                                            // 0x0000(0x0028)(HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_FPropertyCollector;
 

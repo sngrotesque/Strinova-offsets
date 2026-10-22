@@ -16,6 +16,32 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_IconFeedbackContainerPage.WBP_IconFeedbackContainerPage_C.TryBlueprintExport
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IconFeedbackContainerPage_C_TryBlueprintExport final
+{
+public:
+	float                                         InDeltaTime_TryBlueprintExport;                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              InOutSize_TryBlueprintExport;                      // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 ReturnValue_TryBlueprintExport;                    // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DrawWidgetToRT_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_IconFeedbackContainerPage_C_TryBlueprintExport;
+
+// Function WBP_IconFeedbackContainerPage.WBP_IconFeedbackContainerPage_C.TryToExportRT_PNG
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IconFeedbackContainerPage_C_TryToExportRT_PNG final
+{
+public:
+	class UTextureRenderTarget2D*                 InRT_TryToExportRT_PNG;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              InOutSize_TryToExportRT_PNG;                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PathKeyIndex_TryToExportRT_PNG;                    // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OutputIndex_TryToExportRT_PNG;                     // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IconFeedbackContainerPage_C_TryToExportRT_PNG;
+
 // Function WBP_IconFeedbackContainerPage.WBP_IconFeedbackContainerPage_C.ExecuteUbergraph_WBP_IconFeedbackContainerPage
 // 0x0098 (0x0098 - 0x0000)
 struct WBP_IconFeedbackContainerPage_C_ExecuteUbergraph_WBP_IconFeedbackContainerPage final
@@ -37,32 +63,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_IconFeedbackContainerPage_C_ExecuteUbergraph_WBP_IconFeedbackContainerPage;
-
-// Function WBP_IconFeedbackContainerPage.WBP_IconFeedbackContainerPage_C.TryToExportRT_PNG
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IconFeedbackContainerPage_C_TryToExportRT_PNG final
-{
-public:
-	class UTextureRenderTarget2D*                 InRT;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              InOutSize;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PathKeyIndex;                                      // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         OutputIndex;                                       // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IconFeedbackContainerPage_C_TryToExportRT_PNG;
-
-// Function WBP_IconFeedbackContainerPage.WBP_IconFeedbackContainerPage_C.TryBlueprintExport
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IconFeedbackContainerPage_C_TryBlueprintExport final
-{
-public:
-	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              InOutSize;                                         // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_DrawWidgetToRT_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_IconFeedbackContainerPage_C_TryBlueprintExport;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

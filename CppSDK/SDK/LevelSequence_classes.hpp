@@ -12,34 +12,14 @@
 
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
+#include "LevelSequence_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "LevelSequence_structs.hpp"
 #include "Engine_classes.hpp"
 #include "UMG_classes.hpp"
 
 
 SDK_NAMESPACE_START
-
-// Class LevelSequence.LevelSequenceMetaData
-// 0x0000 (0x0000 - 0x0000)
-class ILevelSequenceMetaData final : public IInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LevelSequenceMetaData")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LevelSequenceMetaData")
-	}
-	static class ILevelSequenceMetaData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ILevelSequenceMetaData>();
-	}
-};
-DUMPER7_ASSERTS_ILevelSequenceMetaData;
 
 // Class LevelSequence.LevelSequenceActor
 // 0x0090 (0x03A0 - 0x0310)
@@ -153,6 +133,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UDefaultLevelSequenceInstanceData;
+
+// Class LevelSequence.LevelSequenceMetaData
+// 0x0000 (0x0000 - 0x0000)
+class ILevelSequenceMetaData final : public IInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LevelSequenceMetaData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelSequenceMetaData")
+	}
+	static class ILevelSequenceMetaData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ILevelSequenceMetaData>();
+	}
+};
+DUMPER7_ASSERTS_ILevelSequenceMetaData;
 
 // Class LevelSequence.LevelSequence
 // 0x0150 (0x0498 - 0x0348)

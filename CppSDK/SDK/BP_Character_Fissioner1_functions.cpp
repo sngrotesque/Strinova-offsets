@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Character_Fissioner1.BP_Character_Fissioner1_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Character_Fissioner1_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Character_Fissioner1_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Character_Fissioner1.BP_Character_Fissioner1_C.ExecuteUbergraph_BP_Character_Fissioner1
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ABP_Character_Fissioner1_C::ExecuteUbergraph_BP_Character_Fissioner1(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Character_Fissioner1.BP_Character_Fissioner1_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Character_Fissioner1_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Fissioner1_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

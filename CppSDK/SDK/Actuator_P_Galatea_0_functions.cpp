@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Actuator_P_Galatea.Actuator_P_Galatea_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Actuator_P_Galatea_0::AActuator_P_Galatea_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_P_Galatea_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Actuator_P_Galatea.Actuator_P_Galatea_C.ExecuteUbergraph_Actuator_P_Galatea
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void Actuator_P_Galatea_0::AActuator_P_Galatea_C::ExecuteUbergraph_Actuator_P_Ga
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_P_Galatea.Actuator_P_Galatea_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Actuator_P_Galatea_0::AActuator_P_Galatea_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_P_Galatea_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

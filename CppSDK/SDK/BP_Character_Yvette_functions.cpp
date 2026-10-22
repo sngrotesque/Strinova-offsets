@@ -16,23 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Character_Yvette.BP_Character_Yvette_C.ExecuteUbergraph_BP_Character_Yvette
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Character_Yvette.BP_Character_Yvette_C.Blinking__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_Character_Yvette_C::ExecuteUbergraph_BP_Character_Yvette(int32 EntryPoint)
+void ABP_Character_Yvette_C::Blinking__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Yvette_C", "ExecuteUbergraph_BP_Character_Yvette");
+		Func = Class->GetFunction("BP_Character_Yvette_C", "Blinking__FinishedFunc");
 
-	Params::BP_Character_Yvette_C_ExecuteUbergraph_BP_Character_Yvette Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -50,17 +44,23 @@ void ABP_Character_Yvette_C::Blinking__UpdateFunc()
 }
 
 
-// Function BP_Character_Yvette.BP_Character_Yvette_C.Blinking__FinishedFunc
-// (BlueprintEvent)
+// Function BP_Character_Yvette.BP_Character_Yvette_C.ExecuteUbergraph_BP_Character_Yvette
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Character_Yvette_C::Blinking__FinishedFunc()
+void ABP_Character_Yvette_C::ExecuteUbergraph_BP_Character_Yvette(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Yvette_C", "Blinking__FinishedFunc");
+		Func = Class->GetFunction("BP_Character_Yvette_C", "ExecuteUbergraph_BP_Character_Yvette");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Character_Yvette_C_ExecuteUbergraph_BP_Character_Yvette Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

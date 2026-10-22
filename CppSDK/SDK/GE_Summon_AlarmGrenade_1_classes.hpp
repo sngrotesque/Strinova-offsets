@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
+#include "GameplayAbilities_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Summon_AlarmGrenade.GE_Summon_AlarmGrenade_C
-// 0x0000 (0x10E0 - 0x10E0)
-class GE_Summon_AlarmGrenade_1::UGE_Summon_AlarmGrenade_C final : public UCyGameplayEffect
+// 0x0000 (0x1060 - 0x1060)
+class GE_Summon_AlarmGrenade_1::UGE_Summon_AlarmGrenade_C final : public UGameplayEffect
 {
 public:
 	static class UClass* StaticClass()

@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Detector_Placement_TraceChannel.BP_Detector_Placement_TraceChannel_C
 // 0x0000 (0x01F8 - 0x01F8)
-class BP_Detector_Placement_TraceChannel_0::UBP_Detector_Placement_TraceChannel_C final : public UCyLocationDetectorTraceChannel
+class BP_Detector_Placement_TraceChannel_0::UBP_Detector_Placement_TraceChannel_C final : public UCyLocationDetectorTraceChannelDrop
 {
 public:
 	static class UClass* StaticClass()

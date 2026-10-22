@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Weapon_Q_Lawine.Weapon_Q_Lawine_C
 // 0x0010 (0x1300 - 0x12F0)
-class Weapon_Q_Lawine_0::AWeapon_Q_Lawine_C final : public ACyWeaponTriggerThrow
+class Weapon_Q_Lawine_0::AWeapon_Q_Lawine_C final : public ACyWeaponQuickThrow
 {
 public:
 	class UCySpawnManagerComponent*               CySpawnManager;                                    // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)

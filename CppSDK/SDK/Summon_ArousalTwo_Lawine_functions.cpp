@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_ArousalTwo_Lawine.Summon_ArousalTwo_Lawine_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Summon_ArousalTwo_Lawine::ASummon_ArousalTwo_Lawine_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_ArousalTwo_Lawine_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Summon_ArousalTwo_Lawine.Summon_ArousalTwo_Lawine_C.ExecuteUbergraph_Summon_ArousalTwo_Lawine
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void Summon_ArousalTwo_Lawine::ASummon_ArousalTwo_Lawine_C::ExecuteUbergraph_Sum
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_ArousalTwo_Lawine.Summon_ArousalTwo_Lawine_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Summon_ArousalTwo_Lawine::ASummon_ArousalTwo_Lawine_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_ArousalTwo_Lawine_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

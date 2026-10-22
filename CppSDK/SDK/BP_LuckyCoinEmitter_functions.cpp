@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_LuckyCoinEmitter.BP_LuckyCoinEmitter_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason_ReceiveEndPlay                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LuckyCoinEmitter_C::ReceiveEndPlay(EEndPlayReason EndPlayReason_ReceiveEndPlay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LuckyCoinEmitter_C", "ReceiveEndPlay");
+
+	Params::BP_LuckyCoinEmitter_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason_ReceiveEndPlay = EndPlayReason_ReceiveEndPlay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_LuckyCoinEmitter.BP_LuckyCoinEmitter_C.ExecuteUbergraph_BP_LuckyCoinEmitter
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void ABP_LuckyCoinEmitter_C::ExecuteUbergraph_BP_LuckyCoinEmitter(int32 EntryPoi
 	Params::BP_LuckyCoinEmitter_C_ExecuteUbergraph_BP_LuckyCoinEmitter Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LuckyCoinEmitter.BP_LuckyCoinEmitter_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LuckyCoinEmitter_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LuckyCoinEmitter_C", "ReceiveEndPlay");
-
-	Params::BP_LuckyCoinEmitter_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

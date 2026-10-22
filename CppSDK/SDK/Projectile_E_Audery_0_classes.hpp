@@ -16,13 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Projectile_E_Audery.Projectile_E_Audery_C
-// 0x0018 (0x0B68 - 0x0B50)
+// 0x0010 (0x0B60 - 0x0B50)
 class Projectile_E_Audery_0::AProjectile_E_Audery_C final : public ACyProjectileBlast
 {
 public:
-	class UBP_GameStateComponent_Summon_C*        BP_GameStateComponent_Summon;                      // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyRetainComponent*                     CyRetain;                                          // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyRetainComponent*                     CyRetain;                                          // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCyDataManagerComponent*                CyDataManager;                                     // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

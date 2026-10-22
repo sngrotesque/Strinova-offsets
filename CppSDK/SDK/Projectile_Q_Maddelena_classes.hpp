@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Projectile_Q_Maddelena.Projectile_Q_Maddelena_C
 // 0x0010 (0x0B60 - 0x0B50)
-class Projectile_Q_Maddelena::AProjectile_Q_Maddelena_C final : public ACyProjectileBlast
+class Projectile_Q_Maddelena::AProjectile_Q_Maddelena_C : public ACyProjectileBlast
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B50(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UCyActuatorComponent*                   CyActuator;                                        // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Projectile_Q_Maddelena(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
+	void ExecuteUbergraph_Projectile_Q_Maddelena(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

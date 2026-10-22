@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Weapon_Q_Ming.Weapon_Q_Ming_C
 // 0x0020 (0x1310 - 0x12F0)
-class Weapon_Q_Ming::AWeapon_Q_Ming_C final : public ACyWeaponQuickThrow
+class Weapon_Q_Ming::AWeapon_Q_Ming_C final : public ACyWeaponTriggerThrow
 {
 public:
 	class UCySearchLocationComponent*             CySearchLocation;                                  // 0x12F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)

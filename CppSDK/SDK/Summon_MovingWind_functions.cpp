@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Summon_MovingWind.Summon_MovingWind_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASummon_MovingWind_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Summon_MovingWind_C", "ReceiveTick");
+
+	Params::Summon_MovingWind_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Summon_MovingWind.Summon_MovingWind_C.ExecuteUbergraph_Summon_MovingWind
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void ASummon_MovingWind_C::ExecuteUbergraph_Summon_MovingWind(int32 EntryPoint)
 	Params::Summon_MovingWind_C_ExecuteUbergraph_Summon_MovingWind Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Summon_MovingWind.Summon_MovingWind_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASummon_MovingWind_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Summon_MovingWind_C", "ReceiveTick");
-
-	Params::Summon_MovingWind_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

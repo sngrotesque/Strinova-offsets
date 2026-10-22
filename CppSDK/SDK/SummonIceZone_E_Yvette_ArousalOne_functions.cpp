@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function SummonIceZone_E_Yvette_ArousalOne.SummonIceZone_E_Yvette_ArousalOne_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASummonIceZone_E_Yvette_ArousalOne_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SummonIceZone_E_Yvette_ArousalOne_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SummonIceZone_E_Yvette_ArousalOne.SummonIceZone_E_Yvette_ArousalOne_C.ExecuteUbergraph_SummonIceZone_E_Yvette_ArousalOne
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ASummonIceZone_E_Yvette_ArousalOne_C::ExecuteUbergraph_SummonIceZone_E_Yvet
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function SummonIceZone_E_Yvette_ArousalOne.SummonIceZone_E_Yvette_ArousalOne_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASummonIceZone_E_Yvette_ArousalOne_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SummonIceZone_E_Yvette_ArousalOne_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Abilities.WBP_Abilities_C
-// 0x0000 (0x1238 - 0x1238)
+// 0x0000 (0x1240 - 0x1240)
 class UWBP_Abilities_C final : public UPMUWGameplayAbility
 {
 public:

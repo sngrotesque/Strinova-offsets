@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function Weapon_UseProps.Weapon_UseProps_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AWeapon_UseProps_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Weapon_UseProps_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Weapon_UseProps.Weapon_UseProps_C.ExecuteUbergraph_Weapon_UseProps
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void AWeapon_UseProps_C::ExecuteUbergraph_Weapon_UseProps(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Weapon_UseProps.Weapon_UseProps_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AWeapon_UseProps_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Weapon_UseProps_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

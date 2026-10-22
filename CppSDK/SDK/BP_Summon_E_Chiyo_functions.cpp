@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Summon_E_Chiyo.BP_Summon_E_Chiyo_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Summon_E_Chiyo_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Summon_E_Chiyo_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Summon_E_Chiyo.BP_Summon_E_Chiyo_C.ExecuteUbergraph_BP_Summon_E_Chiyo
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ABP_Summon_E_Chiyo_C::ExecuteUbergraph_BP_Summon_E_Chiyo(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Summon_E_Chiyo.BP_Summon_E_Chiyo_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Summon_E_Chiyo_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Summon_E_Chiyo_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

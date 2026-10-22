@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AtomDecalMaterial_Leave_HardNess.BP_AtomDecalMaterial_Leave_HardNess_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x0620 - 0x0620)
 class BP_AtomDecalMaterial_Leave_HardNess::UBP_AtomDecalMaterial_Leave_HardNess_C final : public UCySAtomDecalMaterial
 {
 public:

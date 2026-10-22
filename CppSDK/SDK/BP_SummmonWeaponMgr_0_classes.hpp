@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SummmonWeaponMgr.BP_SummmonWeaponMgr_C
-// 0x0000 (0x1728 - 0x1728)
+// 0x0000 (0x1738 - 0x1738)
 class BP_SummmonWeaponMgr_0::UBP_SummmonWeaponMgr_C final : public UCySummonWeaponManagerComponent
 {
 public:

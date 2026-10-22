@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function Actuator_P_Fragrans.Actuator_P_Fragrans_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Actuator_P_Fragrans::AActuator_P_Fragrans_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_P_Fragrans_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Actuator_P_Fragrans.Actuator_P_Fragrans_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Actuator_P_Fragrans::AActuator_P_Fragrans_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Actuator_P_Fragrans_C", "ReceiveTick");
+
+	Params::Actuator_P_Fragrans_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Actuator_P_Fragrans.Actuator_P_Fragrans_C.ExecuteUbergraph_Actuator_P_Fragrans
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,40 +67,6 @@ void Actuator_P_Fragrans::AActuator_P_Fragrans_C::ExecuteUbergraph_Actuator_P_Fr
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_P_Fragrans.Actuator_P_Fragrans_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Actuator_P_Fragrans::AActuator_P_Fragrans_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_P_Fragrans_C", "ReceiveTick");
-
-	Params::Actuator_P_Fragrans_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Actuator_P_Fragrans.Actuator_P_Fragrans_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Actuator_P_Fragrans::AActuator_P_Fragrans_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Actuator_P_Fragrans_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

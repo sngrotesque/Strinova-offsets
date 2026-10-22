@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Character_Lilith.BP_Character_Lilith_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Character_Lilith_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Character_Lilith_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Character_Lilith.BP_Character_Lilith_C.ExecuteUbergraph_BP_Character_Lilith
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void ABP_Character_Lilith_C::ExecuteUbergraph_BP_Character_Lilith(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Character_Lilith.BP_Character_Lilith_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Character_Lilith_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Character_Lilith_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

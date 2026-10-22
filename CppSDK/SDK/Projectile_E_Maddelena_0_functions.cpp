@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Projectile_E_Maddelena.Projectile_E_Maddelena_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Projectile_E_Maddelena_0::AProjectile_E_Maddelena_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_E_Maddelena_C", "ReceiveTick");
+
+	Params::Projectile_E_Maddelena_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Projectile_E_Maddelena.Projectile_E_Maddelena_C.ExecuteUbergraph_Projectile_E_Maddelena
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void Projectile_E_Maddelena_0::AProjectile_E_Maddelena_C::ExecuteUbergraph_Proje
 	Params::Projectile_E_Maddelena_C_ExecuteUbergraph_Projectile_E_Maddelena Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_E_Maddelena.Projectile_E_Maddelena_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Projectile_E_Maddelena_0::AProjectile_E_Maddelena_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_E_Maddelena_C", "ReceiveTick");
-
-	Params::Projectile_E_Maddelena_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

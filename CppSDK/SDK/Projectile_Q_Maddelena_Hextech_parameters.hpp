@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct Projectile_Q_Maddelena_Hextech_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_Projectile_Q_Maddelena_Hextech_C_ReceiveTick;
+
 // Function Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C.ExecuteUbergraph_Projectile_Q_Maddelena_Hextech
 // 0x0008 (0x0008 - 0x0000)
 struct Projectile_Q_Maddelena_Hextech_C_ExecuteUbergraph_Projectile_Q_Maddelena_Hextech final
@@ -23,15 +32,6 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_Projectile_Q_Maddelena_Hextech_C_ExecuteUbergraph_Projectile_Q_Maddelena_Hextech;
-
-// Function Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct Projectile_Q_Maddelena_Hextech_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_Projectile_Q_Maddelena_Hextech_C_ReceiveTick;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

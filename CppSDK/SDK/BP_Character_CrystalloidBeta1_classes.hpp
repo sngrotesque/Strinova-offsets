@@ -25,8 +25,8 @@ public:
 	class UBP_WeaponManager_CrystalloidBeta1_C*   BP_WeaponManager_CrystalloidBeta1;                 // 0x1E70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Character_CrystalloidBeta1(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Character_CrystalloidBeta1(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

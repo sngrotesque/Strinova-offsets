@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AProjectile_Q_Maddelena_Hextech_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Projectile_Q_Maddelena_Hextech_C", "ReceiveTick");
+
+	Params::Projectile_Q_Maddelena_Hextech_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C.ExecuteUbergraph_Projectile_Q_Maddelena_Hextech
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void AProjectile_Q_Maddelena_Hextech_C::ExecuteUbergraph_Projectile_Q_Maddelena_
 	Params::Projectile_Q_Maddelena_Hextech_C_ExecuteUbergraph_Projectile_Q_Maddelena_Hextech Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Projectile_Q_Maddelena_Hextech.Projectile_Q_Maddelena_Hextech_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AProjectile_Q_Maddelena_Hextech_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Projectile_Q_Maddelena_Hextech_C", "ReceiveTick");
-
-	Params::Projectile_Q_Maddelena_Hextech_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

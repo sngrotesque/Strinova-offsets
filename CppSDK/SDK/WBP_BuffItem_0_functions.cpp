@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_BuffItem.WBP_BuffItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void WBP_BuffItem_0::UWBP_BuffItem_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuffItem_C", "PreConstruct");
+
+	Params::WBP_BuffItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_BuffItem.WBP_BuffItem_C.ExecuteUbergraph_WBP_BuffItem
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,26 +51,6 @@ void WBP_BuffItem_0::UWBP_BuffItem_C::ExecuteUbergraph_WBP_BuffItem(int32 EntryP
 	Params::WBP_BuffItem_C_ExecuteUbergraph_WBP_BuffItem Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuffItem.WBP_BuffItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void WBP_BuffItem_0::UWBP_BuffItem_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuffItem_C", "PreConstruct");
-
-	Params::WBP_BuffItem_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

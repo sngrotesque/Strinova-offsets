@@ -16,8 +16,8 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Trigger_RemoveEffects.BP_Trigger_RemoveEffects_C
-// 0x0000 (0x0250 - 0x0250)
-class BP_Trigger_RemoveEffects_0::UBP_Trigger_RemoveEffects_C final : public UCyGATriggerRemoveActuatorEffects
+// 0x0000 (0x02A0 - 0x02A0)
+class BP_Trigger_RemoveEffects_0::UBP_Trigger_RemoveEffects_C final : public UCyGATriggerRemoveGameEffect
 {
 public:
 	static class UClass* StaticClass()

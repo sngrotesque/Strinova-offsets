@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -25,8 +25,8 @@ public:
 	class UWidgetAnimation*                       Anim_Hidden;                                       // 0x06D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_HurtTotalPanel(int32 EntryPoint);
 	void WidgetAnimationEvt_Anim_TotalDamage_K2Node_WidgetAnimationEvent_0();
+	void ExecuteUbergraph_WBP_HurtTotalPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

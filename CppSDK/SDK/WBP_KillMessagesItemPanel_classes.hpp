@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PMGame_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PMGame_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,8 +28,8 @@ public:
 	class UImage*                                 Image_Red;                                         // 0x0A30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_KillMessagesItemPanel(int32 EntryPoint);
 	void SequenceEvent_0();
+	void ExecuteUbergraph_WBP_KillMessagesItemPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SA_DecalMaterial_XRm_Mara.BP_SA_DecalMaterial_XRm_Mara_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x0620 - 0x0620)
 class UBP_SA_DecalMaterial_XRm_Mara_C final : public UCySAtomDecalMaterial
 {
 public:

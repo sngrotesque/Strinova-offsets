@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AtomDecalMaterial_Radia_OffseU.BP_AtomDecalMaterial_Radia_OffseU_C
-// 0x0000 (0x05C0 - 0x05C0)
+// 0x0000 (0x0620 - 0x0620)
 class BP_AtomDecalMaterial_Radia_OffseU_0::UBP_AtomDecalMaterial_Radia_OffseU_C final : public UCySAtomDecalMaterial
 {
 public:

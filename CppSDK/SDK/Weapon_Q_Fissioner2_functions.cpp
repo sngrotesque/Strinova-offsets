@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function Weapon_Q_Fissioner2.Weapon_Q_Fissioner2_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AWeapon_Q_Fissioner2_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Weapon_Q_Fissioner2_C", "ReceiveTick");
+
+	Params::Weapon_Q_Fissioner2_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Weapon_Q_Fissioner2.Weapon_Q_Fissioner2_C.ExecuteUbergraph_Weapon_Q_Fissioner2
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,26 +51,6 @@ void AWeapon_Q_Fissioner2_C::ExecuteUbergraph_Weapon_Q_Fissioner2(int32 EntryPoi
 	Params::Weapon_Q_Fissioner2_C_ExecuteUbergraph_Weapon_Q_Fissioner2 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Weapon_Q_Fissioner2.Weapon_Q_Fissioner2_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AWeapon_Q_Fissioner2_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Weapon_Q_Fissioner2_C", "ReceiveTick");
-
-	Params::Weapon_Q_Fissioner2_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
